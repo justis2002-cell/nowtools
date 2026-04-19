@@ -31,7 +31,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PRODUCT_HUNT_API_KEY: ${{ secrets.PRODUCT_HUNT_API_KEY }}
           PRODUCT_HUNT_API_SECRET: ${{ secrets.PRODUCT_HUNT_API_SECRET }}
-        run: npx ts-node scripts/daily-update.ts
+        run: npx tsx scripts/daily-update.ts
 
       - name: Commit and push changes
         run: |
