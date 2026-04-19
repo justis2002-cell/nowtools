@@ -1,0 +1,41 @@
+import { Tool, Category, Badge } from "@/types/tool";
+import toolsJson from "./tools.json";
+
+// 카테고리 한글명을 시스템 ID로 매핑
+const categoryMap: Record<string, Category> = {
+  "AI 툴": "ai-tool",
+  "AI 이미지": "ai-image",
+  "AI 영상": "ai-video",
+  "AI 영상편집": "ai-video-edit",
+  "AI 음악": "ai-music",
+  "AI 코딩": "ai-coding",
+  "AI 자동화": "ai-auto",
+  "디자인 툴": "design",
+  "폰트": "font",
+  "이미지 편집": "image-edit",
+  "무료 소스": "free-source",
+  "SNS 툴": "sns",
+  "생산성": "productivity",
+  "배포/호스팅": "hosting"
+};
+
+const badgeMap: Record<string, Badge> = { 
+  "무료": "free", 
+  "유료": "paid", 
+  "부분무료": "freemium" 
+};
+
+// 모든 카테고리의 툴들을 하나의 리스트로 평탄화(Flatten)
+export const mockTools: Tool[] = toolsJson.categories.flatMap((catGroup) => {
+  const categoryId = categoryMap[catGroup.category] || "ai-tool";
+  
+  return catGroup.tools.map((tool, index) => ({
+    id: `${categoryId}-${index}-${tool.name}`,
+    name: tool.name,
+    category: categoryId,
+    description: tool.description,
+    badge: badgeMap[tool.pricing] || "freemium",
+    link: tool.url,
+    logo: `https://www.google.com/s2/favicons?domain=${new URL(tool.url).hostname}&sz=128`
+  }));
+});

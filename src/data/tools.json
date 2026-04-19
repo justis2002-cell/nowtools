@@ -1,0 +1,166 @@
+{
+  "categories": [
+    {
+      "category": "AI 툴",
+      "tools": [
+        { "name": "ChatGPT", "description": "가장 대중적인 AI 챗봇", "pricing": "부분무료", "url": "https://chatgpt.com" },
+        { "name": "Claude", "description": "글쓰기/코딩에 강점이 있는 AI", "pricing": "부분무료", "url": "https://claude.ai" },
+        { "name": "Gemini", "description": "구글의 AI 챗봇, 검색 연동 강점", "pricing": "부분무료", "url": "https://gemini.google.com" },
+        { "name": "Perplexity", "description": "AI 기반 실시간 검색 엔진", "pricing": "부분무료", "url": "https://perplexity.ai" },
+        { "name": "Microsoft Copilot", "description": "마이크로소프트 오피스 연동 AI", "pricing": "부분무료", "url": "https://copilot.microsoft.com" },
+        { "name": "Meta AI", "description": "메타의 무료 AI 챗봇", "pricing": "무료", "url": "https://meta.ai" },
+        { "name": "Grok", "description": "X(트위터) 기반 AI 챗봇", "pricing": "부분무료", "url": "https://grok.com" },
+        { "name": "Notion AI", "description": "노션 문서 작업 특화 AI", "pricing": "유료", "url": "https://notion.so" },
+        { "name": "Jasper", "description": "마케팅 콘텐츠 특화 AI", "pricing": "유료", "url": "https://jasper.ai" },
+        { "name": "HyperCLOVA X", "description": "네이버의 한국어 특화 AI", "pricing": "부분무료", "url": "https://clova.ai" },
+        { "name": "Google AI Studio", "description": "구글의 Gemini API 기반 AI 개발 실험 플랫폼", "pricing": "부분무료", "url": "https://aistudio.google.com" },
+        { "name": "Google Opal", "description": "자연어로 AI 미니앱을 만드는 노코드 툴", "pricing": "무료", "url": "https://opal.google" },
+        { "name": "Genspark", "description": "AI 검색 + 슬라이드 자동 생성 AI 플랫폼", "pricing": "부분무료", "url": "https://genspark.ai" }
+      ]
+    },
+    {
+      "category": "AI 이미지",
+      "tools": [
+        { "name": "Midjourney", "description": "현존 최강의 AI 이미지 생성 도구", "pricing": "유료", "url": "https://midjourney.com" },
+        { "name": "DALL-E 3", "description": "ChatGPT에 내장된 OpenAI 이미지 생성기", "pricing": "부분무료", "url": "https://openai.com/dall-e-3" },
+        { "name": "Adobe Firefly", "description": "어도비의 AI 이미지 생성기, 상업용 안전", "pricing": "부분무료", "url": "https://firefly.adobe.com" },
+        { "name": "Stable Diffusion", "description": "오픈소스 기반 AI 이미지 생성기", "pricing": "무료", "url": "https://stability.ai" },
+        { "name": "Ideogram", "description": "텍스트 포함 이미지 생성에 강한 AI", "pricing": "부분무료", "url": "https://ideogram.ai" },
+        { "name": "Leonardo AI", "description": "게임/일러스트 특화 AI 이미지 생성기", "pricing": "부분무료", "url": "https://leonardo.ai" },
+        { "name": "Reve Image", "description": "프롬프트 충실도 높은 AI 이미지 생성기", "pricing": "부분무료", "url": "https://reve.art" }
+      ]
+    },
+    {
+      "category": "AI 영상",
+      "tools": [
+        { "name": "Runway", "description": "영상 편집과 생성을 돕는 AI 툴", "pricing": "부분무료", "url": "https://runwayml.com" },
+        { "name": "Sora", "description": "OpenAI의 텍스트→영상 생성 AI", "pricing": "부분무료", "url": "https://sora.com" },
+        { "name": "Kling AI", "description": "고품질 영상 생성 AI", "pricing": "부분무료", "url": "https://klingai.com" },
+        { "name": "Google Veo", "description": "구글의 최신 영상 생성 AI", "pricing": "부분무료", "url": "https://deepmind.google/veo" },
+        { "name": "Vidu", "description": "빠르고 현실감 있는 AI 영상 생성기", "pricing": "부분무료", "url": "https://vidu.studio" },
+        { "name": "PixVerse", "description": "다양한 스타일의 AI 영상 생성 툴", "pricing": "부분무료", "url": "https://pixverse.ai" },
+        { "name": "Google Flow", "description": "Veo 기반 AI 영상 제작 툴, 영화적 클립 생성", "pricing": "부분무료", "url": "https://labs.google/fx/tools/flow" }
+      ]
+    },
+    {
+      "category": "AI 영상편집",
+      "tools": [
+        { "name": "CapCut", "description": "SNS 영상 편집 특화 무료 툴", "pricing": "부분무료", "url": "https://capcut.com" },
+        { "name": "Vrew", "description": "AI 자막 자동 생성 영상 편집 툴", "pricing": "부분무료", "url": "https://vrew.ai" },
+        { "name": "Descript", "description": "텍스트로 영상 편집하는 AI 툴", "pricing": "부분무료", "url": "https://descript.com" },
+        { "name": "Clova Dubbing", "description": "네이버의 AI 더빙 영상 제작 툴", "pricing": "부분무료", "url": "https://clovadubbing.naver.com" }
+      ]
+    },
+    {
+      "category": "AI 음악",
+      "tools": [
+        { "name": "Suno", "description": "가사와 노래를 만들어주는 AI 음악 서비스", "pricing": "부분무료", "url": "https://suno.ai" },
+        { "name": "Udio", "description": "고품질 음악 생성 AI, 세밀한 조정 가능", "pricing": "부분무료", "url": "https://udio.com" },
+        { "name": "MiniMax Music", "description": "고품질 AI 음악 생성 서비스", "pricing": "부분무료", "url": "https://minimax.io" },
+        { "name": "Mureka", "description": "빠르고 다양한 장르 지원 AI 음악 생성", "pricing": "부분무료", "url": "https://mureka.ai" },
+        { "name": "AIVA", "description": "클래식/영화음악 특화 AI 작곡 도구", "pricing": "부분무료", "url": "https://aiva.ai" }
+      ]
+    },
+    {
+      "category": "AI 코딩",
+      "tools": [
+        { "name": "Cursor", "description": "AI 기반의 차세대 코드 에디터", "pricing": "부분무료", "url": "https://cursor.sh" },
+        { "name": "GitHub Copilot", "description": "깃허브의 AI 코드 자동완성 도구", "pricing": "유료", "url": "https://github.com/features/copilot" },
+        { "name": "Windsurf", "description": "AI 에이전트 기반 코딩 에디터", "pricing": "부분무료", "url": "https://codeium.com/windsurf" },
+        { "name": "Replit", "description": "브라우저에서 바로 코딩하는 AI 플랫폼", "pricing": "부분무료", "url": "https://replit.com" },
+        { "name": "Bolt.new", "description": "말로 웹앱 만드는 AI 바이브코딩 툴", "pricing": "부분무료", "url": "https://bolt.new" },
+        { "name": "Lovable", "description": "프롬프트로 풀스택 앱 만드는 AI 툴", "pricing": "부분무료", "url": "https://lovable.dev" },
+        { "name": "v0 by Vercel", "description": "UI 컴포넌트 자동 생성 AI 툴", "pricing": "부분무료", "url": "https://v0.dev" },
+        { "name": "Google Stitch", "description": "프롬프트로 모바일/웹 UI를 자동 생성하는 AI 디자인 툴", "pricing": "무료", "url": "https://stitch.withgoogle.com" }
+      ]
+    },
+    {
+      "category": "AI 자동화",
+      "tools": [
+        { "name": "n8n", "description": "오픈소스 기반 워크플로우 자동화 툴", "pricing": "부분무료", "url": "https://n8n.io" },
+        { "name": "Make", "description": "시각적 자동화 워크플로우 빌더", "pricing": "부분무료", "url": "https://make.com" },
+        { "name": "Zapier", "description": "7000개 이상 앱 연동 자동화 플랫폼", "pricing": "부분무료", "url": "https://zapier.com" },
+        { "name": "Activepieces", "description": "오픈소스 AI 자동화 플랫폼", "pricing": "부분무료", "url": "https://activepieces.com" },
+        { "name": "Google Opal", "description": "자연어로 AI 미니앱을 만드는 노코드 툴", "pricing": "무료", "url": "https://opal.google" }
+      ]
+    },
+    {
+      "category": "디자인 툴",
+      "tools": [
+        { "name": "Canva", "description": "누구나 쉽게 디자인하는 온라인 툴", "pricing": "부분무료", "url": "https://canva.com" },
+        { "name": "Figma", "description": "UI/UX 디자인 협업 툴의 표준", "pricing": "부분무료", "url": "https://figma.com" },
+        { "name": "Adobe Express", "description": "어도비의 간편 온라인 디자인 툴", "pricing": "부분무료", "url": "https://express.adobe.com" },
+        { "name": "Affinity Designer", "description": "어도비 대체 전문 디자인 툴", "pricing": "유료", "url": "https://affinity.serif.com" }
+      ]
+    },
+    {
+      "category": "폰트",
+      "tools": [
+        { "name": "눈누", "description": "상업용 무료 한글 폰트 모음 사이트", "pricing": "무료", "url": "https://noonnu.cc" },
+        { "name": "구글 폰트", "description": "구글의 무료 웹폰트 라이브러리", "pricing": "무료", "url": "https://fonts.google.com" },
+        { "name": "산돌구름", "description": "산돌 폰트 전체를 월정액으로 쓰는 구독 서비스", "pricing": "유료", "url": "https://sandollcloud.com" },
+        { "name": "어도비 폰트", "description": "어도비 구독자 전용 폰트 라이브러리", "pricing": "유료", "url": "https://fonts.adobe.com" },
+        { "name": "폰코 (FONCO)", "description": "윤디자인의 폰트 플랫폼, 무료/유료 한글 폰트", "pricing": "부분무료", "url": "https://font.co.kr" },
+        { "name": "공유마당", "description": "한국저작권위원회의 무료 안심 글꼴 모음", "pricing": "무료", "url": "https://gongu.copyright.or.kr" },
+        { "name": "배달의민족 폰트", "description": "배민이 무료로 배포하는 개성있는 한글 폰트", "pricing": "무료", "url": "https://www.baemin.com/event/font" },
+        { "name": "네이버 폰트", "description": "네이버가 무료로 배포하는 나눔 폰트 시리즈", "pricing": "무료", "url": "https://hangeul.naver.com" }
+      ]
+    },
+    {
+      "category": "이미지 편집",
+      "tools": [
+        { "name": "Remove.bg", "description": "원클릭 배경 제거 AI 툴", "pricing": "부분무료", "url": "https://remove.bg" },
+        { "name": "Photoroom", "description": "이커머스 특화 배경 제거 및 편집 툴", "pricing": "부분무료", "url": "https://photoroom.com" },
+        { "name": "Cutout.pro", "description": "배경제거 + 영상 배경제거까지 가능한 AI 툴", "pricing": "부분무료", "url": "https://cutout.pro" },
+        { "name": "Erase.bg", "description": "무료 AI 배경 제거 툴", "pricing": "무료", "url": "https://erase.bg" },
+        { "name": "VectoSolve", "description": "이미지를 벡터로 변환하는 AI 툴", "pricing": "부분무료", "url": "https://vectosolve.com" },
+        { "name": "Pixlr", "description": "브라우저에서 바로 쓰는 이미지 편집기", "pricing": "부분무료", "url": "https://pixlr.com" },
+        { "name": "Fotor", "description": "AI 배경제거/변경 기능이 있는 올인원 사진 편집기", "pricing": "부분무료", "url": "https://fotor.com" },
+        { "name": "Squoosh", "description": "구글의 무료 이미지 압축 툴", "pricing": "무료", "url": "https://squoosh.app" }
+      ]
+    },
+    {
+      "category": "무료 소스",
+      "tools": [
+        { "name": "Unsplash", "description": "고품질 무료 스톡 이미지 사이트", "pricing": "무료", "url": "https://unsplash.com" },
+        { "name": "Pexels", "description": "무료 이미지 & 영상 소스 사이트", "pricing": "무료", "url": "https://pexels.com" },
+        { "name": "Pixabay", "description": "이미지/영상/음악 무료 소스 사이트", "pricing": "무료", "url": "https://pixabay.com" },
+        { "name": "Freepik", "description": "무료/유료 이미지, 벡터, PSD 소스", "pricing": "부분무료", "url": "https://freepik.com" },
+        { "name": "Mockup World", "description": "무료 목업 PSD 템플릿 모음", "pricing": "무료", "url": "https://mockupworld.co" },
+        { "name": "Mockup Tree", "description": "무료 고해상도 목업 다운로드 사이트", "pricing": "무료", "url": "https://mockuptree.com" },
+        { "name": "Pixeden", "description": "패키지/문구류 특화 무료 목업 사이트", "pricing": "부분무료", "url": "https://pixeden.com" },
+        { "name": "LS Graphics", "description": "고품질 무료 목업 & 디자인 리소스", "pricing": "무료", "url": "https://lsgraphics.co" },
+        { "name": "Wannathis", "description": "트렌디한 3D 목업 무료 다운로드", "pricing": "부분무료", "url": "https://wannathis.one" }
+      ]
+    },
+    {
+      "category": "SNS 툴",
+      "tools": [
+        { "name": "Buffer", "description": "SNS 콘텐츠 예약 발행 스케줄러", "pricing": "부분무료", "url": "https://buffer.com" },
+        { "name": "Hootsuite", "description": "멀티 플랫폼 SNS 관리 툴", "pricing": "유료", "url": "https://hootsuite.com" },
+        { "name": "Later", "description": "인스타그램 특화 SNS 스케줄러", "pricing": "부분무료", "url": "https://later.com" },
+        { "name": "SocialBee", "description": "AI 기반 SNS 콘텐츠 스케줄링 툴", "pricing": "유료", "url": "https://socialbee.com" },
+        { "name": "Tailwind", "description": "인스타/핀터레스트 특화 스케줄링 툴", "pricing": "부분무료", "url": "https://tailwindapp.com" },
+        { "name": "Sprout Social", "description": "SNS 분석 및 팀 협업 관리 툴", "pricing": "유료", "url": "https://sproutsocial.com" }
+      ]
+    },
+    {
+      "category": "생산성",
+      "tools": [
+        { "name": "Notion", "description": "문서/데이터베이스/협업 올인원 툴", "pricing": "부분무료", "url": "https://notion.so" },
+        { "name": "Obsidian", "description": "로컬 기반 개인 지식관리 툴", "pricing": "부분무료", "url": "https://obsidian.md" },
+        { "name": "ClickUp", "description": "프로젝트 관리 올인원 플랫폼", "pricing": "부분무료", "url": "https://clickup.com" },
+        { "name": "Airtable", "description": "AI 기반 데이터베이스/스프레드시트 툴", "pricing": "부분무료", "url": "https://airtable.com" }
+      ]
+    },
+    {
+      "category": "배포/호스팅",
+      "tools": [
+        { "name": "Vercel", "description": "Next.js 최적화 프론트엔드 배포 플랫폼", "pricing": "부분무료", "url": "https://vercel.com" },
+        { "name": "Netlify", "description": "정적 사이트 배포 및 폼/CMS 연동 플랫폼", "pricing": "부분무료", "url": "https://netlify.com" },
+        { "name": "Cloudflare Pages", "description": "무제한 대역폭 무료 정적 사이트 호스팅", "pricing": "부분무료", "url": "https://pages.cloudflare.com" },
+        { "name": "GitHub Pages", "description": "깃허브 저장소 기반 무료 웹사이트 호스팅", "pricing": "무료", "url": "https://pages.github.com" }
+      ]
+    }
+  ]
+}
