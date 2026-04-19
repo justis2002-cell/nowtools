@@ -24,9 +24,9 @@ const categories: { id: Category; label: string }[] = [
 
 export default function CategoryFilter({ activeCategory, onCategoryChange }: CategoryFilterProps) {
   return (
-    <section className="py-8">
+    <section className="py-12">
       <div className="container mx-auto px-4">
-        <div className="flex gap-2 overflow-x-auto pb-4 no-scrollbar">
+        <div className="flex gap-2 overflow-x-auto pb-6 no-scrollbar">
           {categories.map((cat) => (
             <button
               key={cat.id}
