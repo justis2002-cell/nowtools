@@ -1,12 +1,12 @@
 export default function Hero() {
   return (
-    <header className="py-48 text-center relative overflow-hidden">
+    <header className="pt-24 pb-48 text-center relative overflow-hidden">
       {/* Background Glow - Restored */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/15 blur-[120px] rounded-full -z-10" />
       
-      <div className="container mx-auto px-4 -mt-12">
-        {/* Bookmark Hint - Moved higher */}
-        <p className="text-slate-500 text-xs mb-10 animate-fade-in opacity-80">⭐ 즐겨찾기(Ctrl+D)에 추가하세요</p>
+      <div className="container mx-auto px-4">
+        {/* Bookmark Hint - Moderated position */}
+        <p className="text-slate-500 text-xs mb-8 animate-fade-in opacity-80">⭐ 즐겨찾기(Ctrl+D)에 추가하세요</p>
         
         <div className="animate-fade-in-up">
           <h1 className="text-4xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight">
