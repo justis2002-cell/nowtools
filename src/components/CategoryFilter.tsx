@@ -34,7 +34,7 @@ export default function CategoryFilter({ activeCategory, onCategoryChange }: Cat
             <button
               key={category.id}
               onClick={() => onCategoryChange(category.id as Category)}
-              className={`flex-none w-[calc(50%-8px)] sm:w-[calc(33.33%-8px)] md:w-[calc(20%-8px)] lg:w-[calc(12.5%-8px)] px-2 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 border text-center ${
+              className={`flex-none w-[calc(50%-8px)] sm:w-[calc(33.33%-8px)] md:w-[calc(20%-8px)] lg:w-[calc(12.5%-8px)] px-2 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 border text-center active:scale-95 hover:scale-[1.02] ${
                 activeCategory === category.id
                   ? "bg-accent border-accent text-white shadow-lg shadow-accent/20"
                   : "bg-slate-800/50 border-slate-700/50 text-slate-400 hover:border-slate-500 hover:text-white"
