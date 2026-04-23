@@ -32,7 +32,7 @@ export default function Home() {
       <main>
         <Hero />
         
-        <div className="container mx-auto px-4 mb-12">
+        <div className="container mx-auto px-4 mt-12 mb-12">
           <div className="max-w-2xl mx-auto">
             <div className="relative flex items-center bg-slate-900 border border-slate-800 rounded-xl p-2 shadow-xl">
               <Search className="ml-4 text-slate-500 w-5 h-5" />

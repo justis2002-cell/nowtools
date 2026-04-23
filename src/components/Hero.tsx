@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <header className="py-24 md:py-32 text-center relative overflow-hidden">
+    <header className="py-48 text-center relative overflow-hidden">
       {/* Background Glow - Restored */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/15 blur-[120px] rounded-full -z-10" />
       
