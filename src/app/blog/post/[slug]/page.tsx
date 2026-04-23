@@ -2,14 +2,12 @@ import ReactMarkdown from 'react-markdown';
 import { getPostBySlug, getAllPosts } from '@/lib/blog';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
+import fs from 'fs';
+import path from 'path';
 
 export function generateStaticParams() {
-  const fs = require('fs');
-  const path = require('path');
   const blogDir = path.join(process.cwd(), 'src/content/blog');
-  
   if (!fs.existsSync(blogDir)) return [];
-  
   const files = fs.readdirSync(blogDir);
   return files
     .filter((file: string) => file.endsWith('.md'))
