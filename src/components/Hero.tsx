@@ -5,6 +5,9 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/15 blur-[120px] rounded-full -z-10" />
       
       <div className="container mx-auto px-4">
+        {/* Bookmark Hint */}
+        <p className="text-slate-500 text-sm mb-6 animate-fade-in">⭐ 즐겨찾기(Ctrl+D)에 추가하세요</p>
+        
         <h1 className="text-4xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-accent to-purple-400">
             AI & 디자인 & 무료
