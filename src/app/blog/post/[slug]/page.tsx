@@ -6,7 +6,7 @@ import fs from 'fs';
 import path from 'path';
 
 export function generateStaticParams() {
-  const blogDir = path.join(process.cwd(), 'src/content/blog');
+  const blogDir = path.join(process.cwd(), 'src/content/news');
   if (!fs.existsSync(blogDir)) return [];
   const files = fs.readdirSync(blogDir);
   return files
