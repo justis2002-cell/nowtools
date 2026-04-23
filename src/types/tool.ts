@@ -13,7 +13,9 @@ export type Category =
   | 'free-source'
   | 'sns'
   | 'productivity'
-  | 'hosting';
+  | 'hosting'
+  | 'conversion'
+  | 'education';
 
 export type Badge = 'free' | 'paid' | 'freemium';
 

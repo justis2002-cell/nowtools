@@ -7,6 +7,7 @@ import CategoryFilter from "@/components/CategoryFilter";
 import ToolGrid from "@/components/ToolGrid";
 import ToolDetailModal from "@/components/ToolDetailModal";
 import { mockTools } from "@/data/mockTools";
+import { Search } from "lucide-react";
 import { Category, Tool } from "@/types/tool";
 
 export default function Home() {
@@ -26,10 +27,24 @@ export default function Home() {
 
   return (
     <div className="min-h-screen pb-20">
-      <Navbar onSearch={setSearchTerm} />
+      <Navbar />
       
       <main>
         <Hero />
+        
+        <div className="container mx-auto px-4 mb-12">
+          <div className="max-w-2xl mx-auto">
+            <div className="relative flex items-center bg-slate-900 border border-slate-800 rounded-xl p-2 shadow-xl">
+              <Search className="ml-4 text-slate-500 w-5 h-5" />
+              <input
+                type="text"
+                placeholder="어떤 툴을 찾으시나요?"
+                className="w-full bg-transparent border-none py-3 px-4 text-white placeholder-slate-500 focus:ring-0"
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+          </div>
+        </div>
         
         <CategoryFilter 
           activeCategory={activeCategory} 
@@ -41,16 +56,6 @@ export default function Home() {
           onToolClick={setSelectedTool} 
         />
       </main>
-
-      <footer className="mt-20 py-10 border-t border-slate-800 text-center text-slate-500 text-sm">
-        <div className="container mx-auto px-4">
-          <p>&copy; 2024 nowtools.kr. All rights reserved.</p>
-          <div className="flex justify-center gap-6 mt-4">
-            <a href="#" className="hover:text-white transition-colors">개인정보처리방침</a>
-            <a href="#" className="hover:text-white transition-colors">이용약관</a>
-          </div>
-        </div>
-      </footer>
 
       <ToolDetailModal 
         tool={selectedTool} 

@@ -72,15 +72,23 @@ async function fetchAINews() {
 }
 
 async function callGemini(prompt: string) {
-  // 사용 가능한 모델 목록 가져오기
-  const listResponse = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}`);
-  const listData = await listResponse.json() as any;
-  
-  const availableModels = (listData.models || [])
-    .map((m: any) => m.name.replace('models/', ''))
-    .filter((name: string) => name.includes('gemini'));
+  let availableModels: string[] = [];
+  try {
+    const listResponse = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${GEMINI_API_KEY}`);
+    const listData = await listResponse.json() as any;
     
-  console.log(`🤖 사용 가능한 Gemini 모델: ${availableModels.join(', ')}`);
+    availableModels = (listData.models || [])
+      .map((m: any) => m.name.replace('models/', ''))
+      .filter((name: string) => name.includes('gemini') && !name.includes('vision') && !name.includes('embedding'));
+  } catch (e) {
+    console.warn('⚠️ 모델 목록을 가져오지 못했습니다. 기본 모델을 시도합니다.');
+  }
+    
+  // 기본적으로 시도할 안정적인 모델들 추가 (목록에 없더라도 시도)
+  const fallbackModels = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro'];
+  availableModels = [...new Set([...availableModels, ...fallbackModels])];
+
+  console.log(`🤖 시도할 Gemini 모델: ${availableModels.join(', ')}`);
 
   for (const model of availableModels) {
     try {
@@ -97,7 +105,14 @@ async function callGemini(prompt: string) {
         let text = data.candidates[0].content.parts[0].text;
         // 마크다운 코드 블록 기호 제거
         text = text.replace(/^```markdown\n/, '').replace(/^```\n/, '').replace(/\n```$/, '');
-        return text;
+        
+        // 서론(예: "물론입니다...") 등 불필요한 문구 제거: 첫 '---' 지점부터 시작하게 함
+        const frontmatterStart = text.indexOf('---');
+        if (frontmatterStart !== -1) {
+          text = text.substring(frontmatterStart);
+        }
+        
+        return text.trim();
       }
       console.warn(`⚠️ Gemini ${model} 실패:`, data.error?.message || '알 수 없는 오류');
     } catch (e: any) {
@@ -123,6 +138,8 @@ async function updateTools() {
     ${tools.map((t: any) => `- 이름: ${t.name}\n  설명: ${t.tagline}\n  상세: ${t.description}\n  URL: ${t.url}`).join('\n\n')}
 
     위 도구들을 소개하는 한국어 블로그 포스트를 마크다운 형식으로 작성해줘.
+    분량은 공백 포함 최소 1,500자 이상의 매우 상세하고 풍성한 전문 칼럼 형식으로 작성해야 해.
+
     포스트 최상단에 다음과 같은 형식의 Frontmatter를 포함해줘:
     ---
     title: "[오늘의 AI] ${date} 급상승 AI 툴 TOP 3 소개"
@@ -130,18 +147,20 @@ async function updateTools() {
     category: "tools"
     ---
 
-    포스트 구성:
-    1. 서론: 오늘의 AI 트렌드 요약
-    2. 각 도구별 섹션: 
-       - 제목은 '## 번호. 한글이름 (영문이름)' 형식으로 작성.
-       - 요약, 특징을 작성.
-       - 사이트 링크는 반드시 '[사이트 방문하기](URL)' 형식을 사용할 것. (URL을 생으로 노출 금지!)
-    3. 결론
+    포스트 구성 규칙 (19일자 원본의 형식을 반드시 지킬 것):
+    1. 서론: 오늘의 AI 트렌드와 기술적 배경을 500자 내외로 풍성하게 작성.
+    2. 각 도구별 섹션 (## 1. 이름 형식): 
+       - **요약:** 섹션을 만들고 도구의 가치와 목적을 상세히 설명.
+       - **특징:** 섹션을 만들고 최소 5개 이상의 상세 특징을 불렛 포인트(* **특징명:** 내용)로 작성.
+       - 사이트 링크는 반드시 '[사이트 방문하기](URL)' 형식을 사용할 것.
+    3. --- 구분선 후 **결론:** 섹션: 오늘 도구들이 주는 시사점과 미래 전망을 400자 내외로 상세히 작성.
+    
+    주의: "물론입니다"와 같은 대화형 문구는 절대 포함하지 말고, 오직 마크다운 내용만 출력해.
   `;
 
   const content = await callGemini(prompt);
   const fileName = `${date}-daily-ai-tools.md`;
-  const filePath = path.join(process.cwd(), 'src/content/blog', fileName);
+  const filePath = path.join(process.cwd(), 'src/content/tools', fileName);
   fs.writeFileSync(filePath, content, 'utf-8');
   console.log(`✅ 도구 포스트 저장 완료: ${filePath}`);
 }
@@ -160,6 +179,8 @@ async function updateNews() {
     ${news.map((n: any) => `- 제목: ${n.title}\n  링크: ${n.link}`).join('\n\n')}
 
     이 뉴스들을 요약 정리한 한국어 블로그 포스트를 마크다운 형식으로 작성해줘.
+    분량은 공백 포함 최소 1,500자 이상의 매우 상세하고 깊이 있는 전문 브리핑 형식으로 작성해야 해.
+
     포스트 최상단에 다음과 같은 형식의 Frontmatter를 포함해줘:
     ---
     title: "[AI 뉴스] ${date} 오늘의 AI 핵심 소식 브리핑"
@@ -167,30 +188,52 @@ async function updateNews() {
     category: "news"
     ---
 
-    포스트 구성:
-    1. 서론: 오늘 AI 업계의 주요 분위기
-    2. 뉴스 브리핑: 
-       - 각 뉴스는 '#### 번호. 기사제목' 형식으로 시작할 것.
-       - 출처, 핵심 내용, 인사이트를 작성.
-       - 뉴스 링크는 반드시 '[기사 원문 보기](URL)' 형식을 사용할 것. (절대로 URL을 밖으로 꺼내지 말 것!)
-    3. 결론: 향후 주목해야 할 점
+    포스트 구성 규칙 (19일자 원본의 가독성 레이아웃을 반드시 지킬 것):
+    1. ### 서론: 오늘 AI 업계의 주요 분위기
+       - 오늘의 거시적인 AI 트렌드를 400자 내외로 상세히 서술.
+    2. ### 뉴스 브리핑: 
+       - 각 뉴스는 '#### 번호. 기사제목' 형식으로 시작.
+       - 각 항목 내부에 다음 불렛 포인트를 반드시 포함:
+         * **출처:** 기사 출처 표기
+         * **핵심 내용:** 200자 이상의 상세한 내용 요약
+         * **인사이트:** 해당 뉴스가 업계에 미칠 영향 분석
+         * [기사 원문 보기](URL) (URL을 생으로 노출 금지)
+       - 각 뉴스 항목 사이에는 충분한 줄바꿈(빈 줄)을 넣어 가독성을 높일 것.
+    3. ### 결론: 향후 주목해야 할 점
+       - 오늘의 소식을 종합한 통찰력 있는 결론을 400자 내외로 상세히 서술.
+
+    주의: "물론입니다"와 같은 불필요한 서두는 절대 포함하지 말고, 오직 마크다운 내용만 출력해.
   `;
 
   const content = await callGemini(prompt);
   const fileName = `${date}-ai-news.md`;
-  const filePath = path.join(process.cwd(), 'src/content/blog', fileName);
+  const filePath = path.join(process.cwd(), 'src/content/news', fileName);
   fs.writeFileSync(filePath, content, 'utf-8');
   console.log(`✅ 뉴스 포스트 저장 완료: ${filePath}`);
 }
 
 async function main() {
   console.log('🚀 종합 AI 정보 업데이트 시작...');
+  let hasError = false;
   try {
-    await updateTools().catch(e => console.error('❌ 도구 업데이트 실패:', e));
-    await updateNews().catch(e => console.error('❌ 뉴스 업데이트 실패:', e));
-    console.log('🏁 작업 완료!');
+    await updateTools().catch(e => {
+      console.error('❌ 도구 업데이트 실패:', e);
+      hasError = true;
+    });
+    await updateNews().catch(e => {
+      console.error('❌ 뉴스 업데이트 실패:', e);
+      hasError = true;
+    });
+    
+    if (hasError) {
+      console.error('⚠️ 일부 작업이 실패했습니다.');
+      process.exit(1);
+    }
+    
+    console.log('🏁 모든 작업 완료!');
   } catch (error) {
-    console.error('❌ 전체 작업 중 오류 발생:', error);
+    console.error('❌ 전체 작업 중 치명적 오류 발생:', error);
+    process.exit(1);
   }
 }
 

@@ -27,7 +27,7 @@ export default async function BlogListPage({ params }: Props) {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <main className="py-20 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="mb-12 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">{pageTitle}</h1>
           <p className="text-gray-600 text-lg animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
@@ -35,36 +35,36 @@ export default async function BlogListPage({ params }: Props) {
           </p>
         </div>
 
-        <div className="grid gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.length > 0 ? (
             posts.map((post, index) => (
               <article 
                 key={post.slug} 
-                className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow animate-fade-in-up"
-                style={{ animationDelay: `${0.1 * (index + 2)}s` }}
+                className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow animate-fade-in-up flex flex-col"
+                style={{ animationDelay: `${0.05 * (index % 10)}s` }}
               >
-                <Link href={`/blog/post/${post.slug}`} className="block p-8">
+                <Link href={`/blog/post/${post.slug}`} className="p-6 flex flex-col h-full">
                   <div className="flex justify-between items-start mb-4">
-                    <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+                    <span className="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded-full">
                       데일리 업데이트
                     </span>
-                    <time className="text-sm text-gray-500">{post.date}</time>
+                    <time className="text-xs text-gray-400">{post.date}</time>
                   </div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
+                  <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors line-clamp-2">
                     {post.title}
                   </h2>
-                  <p className="text-gray-600 line-clamp-2 mb-4 leading-relaxed">
+                  <p className="text-sm text-gray-600 line-clamp-3 mb-6 leading-relaxed flex-grow">
                     {post.excerpt}
                   </p>
-                  <div className="text-blue-600 font-semibold flex items-center gap-1 group">
-                    더 보기 
+                  <div className="text-blue-600 text-sm font-semibold flex items-center gap-1 group mt-auto">
+                    읽어보기 
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </div>
                 </Link>
               </article>
             ))
           ) : (
-            <div className="text-center py-20 bg-white rounded-2xl border border-dashed border-gray-300">
+            <div className="col-span-full text-center py-20 bg-white rounded-2xl border border-dashed border-gray-300">
               <p className="text-gray-500">아직 등록된 포스트가 없습니다.</p>
             </div>
           )}

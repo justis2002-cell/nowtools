@@ -16,7 +16,9 @@ const categoryMap: Record<string, Category> = {
   "무료 소스": "free-source",
   "SNS 툴": "sns",
   "생산성": "productivity",
-  "배포/호스팅": "hosting"
+  "배포/호스팅": "hosting",
+  "변환 툴": "conversion",
+  "무료 교육": "education"
 };
 
 const badgeMap: Record<string, Badge> = { 

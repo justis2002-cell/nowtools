@@ -20,24 +20,27 @@ const categories: { id: Category; label: string }[] = [
   { id: 'sns', label: 'SNS 툴' },
   { id: 'productivity', label: '생산성' },
   { id: 'hosting', label: '배포/호스팅' },
+  { id: 'conversion', label: '변환 툴' },
+  { id: 'education', label: '무료 교육' },
 ];
 
 export default function CategoryFilter({ activeCategory, onCategoryChange }: CategoryFilterProps) {
   return (
-    <section className="py-12">
+    <section className="py-8">
       <div className="container mx-auto px-4">
-        <div className="flex gap-2 overflow-x-auto pb-6 no-scrollbar">
-          {categories.map((cat) => (
+        {/* All categories in a clean, centered grid */}
+        <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-2">
+          {categories.map((category) => (
             <button
-              key={cat.id}
-              onClick={() => onCategoryChange(cat.id)}
-              className={`whitespace-nowrap px-6 py-2 rounded-full border transition-all font-semibold text-sm ${
-                activeCategory === cat.id
-                  ? "bg-accent border-accent text-white shadow-[0_0_15px_rgba(139,92,246,0.5)]"
-                  : "bg-slate-800/50 border-slate-700 text-slate-400 hover:border-slate-500 hover:text-white"
+              key={category.id}
+              onClick={() => onCategoryChange(category.id as Category)}
+              className={`px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 border text-center ${
+                activeCategory === category.id
+                  ? "bg-accent border-accent text-white shadow-lg shadow-accent/20"
+                  : "bg-slate-800/50 border-slate-700/50 text-slate-400 hover:border-slate-500 hover:text-white"
               }`}
             >
-              {cat.label}
+              {category.label}
             </button>
           ))}
         </div>

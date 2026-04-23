@@ -4,10 +4,18 @@ import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 
 export function generateStaticParams() {
-  const posts = getAllPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  const fs = require('fs');
+  const path = require('path');
+  const blogDir = path.join(process.cwd(), 'src/content/blog');
+  
+  if (!fs.existsSync(blogDir)) return [];
+  
+  const files = fs.readdirSync(blogDir);
+  return files
+    .filter((file: string) => file.endsWith('.md'))
+    .map((file: string) => ({
+      slug: file.replace(/\.md$/, ''),
+    }));
 }
 
 interface Props {

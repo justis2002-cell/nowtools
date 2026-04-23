@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "AI, 이미지, 디자인 관련 유용한 툴들을 한눈에 확인하고 비교해보세요. ChatGPT부터 미드저니까지 모든 AI 툴을 모았습니다.",
 };
 
+import Footer from "@/components/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,6 +28,7 @@ export default function RootLayout({
     <html lang="ko">
       <body className={`${inter.variable} ${outfit.variable} antialiased`}>
         {children}
+        <Footer />
       </body>
     </html>
   );

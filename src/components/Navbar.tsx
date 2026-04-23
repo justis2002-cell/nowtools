@@ -30,7 +30,7 @@ export default function Navbar({ onSearch }: NavbarProps) {
         {!onSearch && <div className="flex-1" />}
 
         <div className="flex items-center gap-6">
-          <Link href="/#about" className="text-slate-400 hover:text-white transition-colors text-sm font-semibold">
+          <Link href="/" className="text-slate-400 hover:text-white transition-colors text-sm font-semibold">
             About
           </Link>
           <Link href="/blog/tools" className="text-slate-400 hover:text-white transition-colors text-sm font-semibold">
@@ -38,6 +38,9 @@ export default function Navbar({ onSearch }: NavbarProps) {
           </Link>
           <Link href="/blog/news" className="text-slate-400 hover:text-white transition-colors text-sm font-semibold">
             AI뉴스
+          </Link>
+          <Link href="/about" className="text-slate-400 hover:text-white transition-colors text-sm font-semibold">
+            소개
           </Link>
         </div>
       </div>
