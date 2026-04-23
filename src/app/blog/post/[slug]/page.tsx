@@ -6,15 +6,24 @@ import fs from 'fs';
 import path from 'path';
 
 export function generateStaticParams() {
-  const blogDir = path.join(process.cwd(), 'src/content/news');
-  if (!fs.existsSync(blogDir)) return [];
-  const files = fs.readdirSync(blogDir);
-  return files
+  const folders = ['news', 'tools'];
+  let allFiles: string[] = [];
+
+  folders.forEach(folder => {
+    const dirPath = path.join(process.cwd(), 'src/content', folder);
+    if (fs.existsSync(dirPath)) {
+      const files = fs.readdirSync(dirPath);
+      allFiles = allFiles.concat(files);
+    }
+  });
+
+  return allFiles
     .filter((file: string) => file.endsWith('.md'))
     .map((file: string) => ({
       slug: file.replace(/\.md$/, ''),
     }));
 }
+
 
 interface Props {
   params: Promise<{ slug: string }>;
