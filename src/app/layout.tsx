@@ -15,6 +15,9 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "nowtools.kr - AI/이미지/디자인 툴 디렉토리",
   description: "AI, 이미지, 디자인 관련 유용한 툴들을 한눈에 확인하고 비교해보세요. ChatGPT부터 미드저니까지 모든 AI 툴을 모았습니다.",
+  verification: {
+    google: "tb29R1F5cG6rb8lUHtNP_Yg8mYwhpejuHq2X-01jMdI",
+  },
 };
 
 import Footer from "@/components/Footer";
