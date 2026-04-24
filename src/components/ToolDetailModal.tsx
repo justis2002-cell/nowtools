@@ -107,17 +107,6 @@ export default function ToolDetailModal({ tool, onClose }: ToolDetailModalProps)
             </div>
           )}
 
-          {/* 공식 사이트 버튼 */}
-          <div className="flex flex-col gap-4 mb-12">
-            <a
-              href={tool.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent-dark text-white font-extrabold py-5 rounded-2xl transition-all shadow-lg shadow-accent/20 text-lg"
-            >
-              공식 사이트 바로가기 <ExternalLink className="w-5 h-5" />
-            </a>
-          </div>
 
           {/* 관련 툴 추천 */}
           {relatedTools.length > 0 && (
@@ -154,19 +143,27 @@ export default function ToolDetailModal({ tool, onClose }: ToolDetailModalProps)
             </div>
           )}
 
-          {/* 하단 푸터 */}
+          {/* 공식 사이트 버튼 */}
+          <div className="flex flex-col gap-4 mb-12">
+            <a
+              href={tool.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent-dark text-white font-extrabold py-5 rounded-2xl transition-all shadow-lg shadow-accent/20 text-xl"
+            >
+              공식 사이트 바로가기 <ExternalLink className="w-6 h-6" />
+            </a>
+          </div>
+
           <div className="pt-8 border-t border-slate-800/50 flex flex-col items-center gap-6">
             <Link
               href="/"
               onClick={onClose}
-              className="text-slate-400 hover:text-white transition-colors text-sm font-bold flex items-center gap-1 group"
+              className="text-white hover:text-accent transition-all text-xl font-black flex items-center gap-2 group bg-slate-800/50 px-8 py-4 rounded-full border border-slate-700 hover:border-accent/50"
             >
               nowtools.kr에서 더 많은 툴 보기
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
             </Link>
-            <p className="text-[10px] text-slate-500 uppercase tracking-widest text-center">
-              이 포스팅은 제휴 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.
-            </p>
           </div>
         </div>
       </div>
