@@ -15,7 +15,10 @@ export type Category =
   | 'productivity'
   | 'hosting'
   | 'conversion'
-  | 'education';
+  | 'education'
+  | 'ai-writing'
+  | 'ai-presentation'
+  | 'ai-language';
 
 export type Badge = 'free' | 'paid' | 'freemium';
 
