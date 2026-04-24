@@ -18,7 +18,9 @@ export type Category =
   | 'education'
   | 'ai-writing'
   | 'ai-presentation'
-  | 'ai-language';
+  | 'ai-language'
+  | 'ai-meeting'
+  | 'reference';
 
 export type Badge = 'free' | 'paid' | 'freemium';
 

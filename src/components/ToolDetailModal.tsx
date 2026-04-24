@@ -31,6 +31,8 @@ const categoryTags: Record<string, string[]> = {
   "ai-writing": ["콘텐츠 생성", "문법 교정", "소설 창작", "마케팅 카피"],
   "ai-presentation": ["슬라이드 자동 생성", "디자인 자동화", "발표 자료", "협업 도구"],
   "ai-language": ["정교한 번역", "문법 교정", "외국어 학습", "다국어 지원"],
+  "ai-meeting": ["회의 기록", "음성 인식", "자동 요약", "업무 효율"],
+  "reference": ["디자인 영감", "포트폴리오", "UI 레퍼런스", "트렌드 파악"],
 };
 
 export default function ToolDetailModal({ tool, onClose }: ToolDetailModalProps) {

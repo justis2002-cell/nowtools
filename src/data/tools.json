@@ -280,6 +280,31 @@
         {"name": "Elsa Speak", "description": "AI가 내 영어 발음을 분석하고 교정해주는 발음 교정 전문 앱. 원어민과 비교해 내 발음의 정확도를 점수로 보여주고 틀린 부분을 즉시 피드백. 영어 발음이 콤플렉스인 한국인에게 특히 효과적인 스피킹 트레이너.", "pricing": "부분무료", "url": "https://elsaspeak.com"},
         {"name": "Smartcat", "description": "전문 번역가와 AI 번역을 결합한 번역 관리 플랫폼. 기업 문서, 계약서, 마케팅 자료 등 전문성이 필요한 번역을 AI로 초벌 번역 후 전문가가 검수하는 워크플로우 구성 가능. 번역 메모리 기능으로 반복 번역 비용 절감.", "pricing": "부분무료", "url": "https://smartcat.com"}
       ]
+    },
+    {
+      "category": "AI 미팅/회의",
+      "tools": [
+        {"name": "Clova Note", "description": "네이버가 만든 AI 회의록 자동 생성 툴. 회의 음성을 실시간으로 텍스트로 변환하고 핵심 내용을 자동 요약해준다. 한국어 인식률이 압도적으로 뛰어나며 무료로 월 300분까지 사용 가능. 직장인 필수 앱.", "pricing": "부분무료", "url": "https://clovanote.naver.com"},
+        {"name": "Otter.ai", "description": "영어 회의 자동 전사와 요약의 글로벌 표준 툴. Zoom, Google Meet, Microsoft Teams와 자동 연동돼 회의가 시작되면 자동으로 녹음·요약. 팀원과 회의록을 실시간 공유하고 중요한 발언에 하이라이트 표시 가능.", "pricing": "부분무료", "url": "https://otter.ai"},
+        {"name": "Fireflies.ai", "description": "AI가 회의에 자동 참여해 녹음·전사·요약까지 처리해주는 회의 어시스턴트. Zoom, Teams, Meet 등 모든 화상회의 플랫폼과 연동. 회의 후 액션 아이템을 자동 추출해주고 키워드 검색으로 특정 발언을 빠르게 찾을 수 있다.", "pricing": "부분무료", "url": "https://fireflies.ai"},
+        {"name": "tl;dv", "description": "회의 녹화본을 AI가 요약해주는 툴. 긴 회의 영상을 보지 않아도 핵심만 빠르게 파악 가능. 특정 발언 구간만 클립으로 잘라 팀원에게 공유하는 기능이 유용하며 Zoom, Google Meet와 무료로 연동 가능.", "pricing": "부분무료", "url": "https://tldv.io"},
+        {"name": "Zoom AI Companion", "description": "Zoom 안에 내장된 AI 어시스턴트. 회의 요약, 다음 단계 액션 아이템 정리, 채팅 초안 작성을 자동으로 처리. Zoom 유료 플랜 사용자라면 추가 비용 없이 바로 활성화 가능하며 회의 중 놓친 내용을 실시간으로 물어볼 수도 있다.", "pricing": "유료", "url": "https://zoom.us/ai-companion"},
+        {"name": "Grain", "description": "영업·고객 미팅 특화 AI 회의 녹화 툴. 회의 중 중요한 순간을 하이라이트로 저장하고 고객 인사이트를 자동으로 정리. CRM과 연동해 영업 파이프라인 관리까지 가능하며 세일즈팀과 CS팀에서 많이 사용.", "pricing": "부분무료", "url": "https://grain.com"},
+        {"name": "Fathom", "description": "무료로 쓸 수 있는 AI 회의 요약 툴. Zoom 회의를 자동 녹화·요약하고 CRM에 자동으로 노트를 저장해준다. 무료 플랜이 매우 넉넉해 개인 사용자와 프리랜서에게 특히 인기. 영어 지원 위주.", "pricing": "부분무료", "url": "https://fathom.video"}
+      ]
+    },
+    {
+      "category": "레퍼런스/영감",
+      "tools": [
+        {"name": "Pinterest", "description": "전 세계 디자이너들의 레퍼런스 수집 필수 앱. 로고, 상세페이지, 패키지, UI, 인테리어 등 분야를 가리지 않고 수억 장의 이미지를 무료로 탐색 가능. 보드를 만들어 카테고리별로 정리하면 나만의 무한 레퍼런스 라이브러리 완성.", "pricing": "무료", "url": "https://pinterest.com"},
+        {"name": "Behance", "description": "어도비가 운영하는 세계 최대 디자인 포트폴리오 플랫폼. 전 세계 top 디자이너들의 실제 작업물을 카테고리별로 탐색 가능. 로고, 브랜딩, 영상, UI/UX, 일러스트 등 모든 분야의 최고 수준 레퍼런스를 무료로 볼 수 있다.", "pricing": "무료", "url": "https://behance.net"},
+        {"name": "Dribbble", "description": "UI/UX·그래픽 디자인 분야 최고의 영감 플랫폼. 전 세계 디자이너들이 작업 스니펫을 공유하는 커뮤니티로 트렌디한 디자인 스타일을 빠르게 파악할 수 있다. 프리랜서 디자이너라면 포트폴리오 등록으로 클라이언트 유입도 가능.", "pricing": "부분무료", "url": "https://dribbble.com"},
+        {"name": "Mobbin", "description": "실제 앱과 웹사이트의 UI 스크린샷을 모아둔 레퍼런스 사이트. 로그인, 온보딩, 결제 화면 등 특정 UX 패턴별로 검색 가능. 앱 디자인할 때 막히는 순간마다 찾게 되는 UI 디자이너 필수 북마크.", "pricing": "부분무료", "url": "https://mobbin.com"},
+        {"name": "GDWEB", "description": "국내 최대 웹디자인 레퍼런스 사이트. 한국 감성의 쇼핑몰, 기업 사이트, 랜딩페이지 디자인을 카테고리별로 탐색 가능. 상세페이지, 메인 배너, 이벤트 페이지 등 실제 한국 온라인 쇼핑몰 레퍼런스를 찾을 때 가장 먼저 가는 사이트.", "pricing": "무료", "url": "https://gdweb.co.kr"},
+        {"name": "Awwwards", "description": "전 세계 최고 수준의 웹사이트를 선정하고 소개하는 디자인 어워드 사이트. 혁신적인 웹 디자인, 인터랙션, 애니메이션 레퍼런스의 보물창고. 트렌드를 앞서가는 최신 웹 디자인 흐름을 파악하고 싶을 때 필수 방문지.", "pricing": "무료", "url": "https://awwwards.com"},
+        {"name": "Muzli", "description": "크롬 새 탭을 열 때마다 최신 디자인 트렌드를 보여주는 익스텐션. Dribbble, Behance, 디자인 블로그의 최신 작품을 자동으로 큐레이션해 매일 새로운 영감을 제공. 설치만 해두면 브라우저를 열 때마다 디자인 감각이 쌓인다.", "pricing": "무료", "url": "https://muz.li"},
+        {"name": "Designspiration", "description": "색상 기반으로 레퍼런스를 검색할 수 있는 독특한 디자인 영감 사이트. 원하는 색상 팔레트를 선택하면 그 색감의 디자인 작품들을 한눈에 탐색 가능. 컬러 기획이 필요할 때 특히 유용하며 그래픽·타이포그래피 레퍼런스가 풍부.", "pricing": "무료", "url": "https://designspiration.com"}
+      ]
     }
   ]
 }

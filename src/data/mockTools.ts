@@ -21,7 +21,9 @@ const categoryMap: Record<string, Category> = {
   "무료 교육": "education",
   "AI 글쓰기": "ai-writing",
   "AI 프레젠테이션": "ai-presentation",
-  "AI 번역/언어": "ai-language"
+  "AI 번역/언어": "ai-language",
+  "AI 미팅/회의": "ai-meeting",
+  "레퍼런스/영감": "reference"
 };
 
 const badgeMap: Record<string, Badge> = { 
