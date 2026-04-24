@@ -127,7 +127,10 @@
         {"name": "Spline", "description": "3D 디자인을 브라우저에서 바로 만드는 툴. 설치 없이 웹에서 3D 오브젝트, 애니메이션, 인터랙션을 제작하고 웹사이트에 바로 삽입 가능. 고급스러운 3D 웹 경험을 코딩 없이 만들 수 있다.", "pricing": "부분무료", "url": "https://spline.design"},
         {"name": "Penpot", "description": "완전 오픈소스 UI/UX 디자인 툴. Figma의 무료 오픈소스 대안으로 자체 서버에 설치해 사용 가능. 팀 협업, 프로토타이핑, 벡터 편집 기능을 무료로 제공하며 개인 정보 보호에 민감한 팀에 적합.", "pricing": "무료", "url": "https://penpot.app"},
         {"name": "Gamma", "description": "AI가 자동으로 프레젠테이션을 만들어주는 툴. 주제만 입력하면 슬라이드 구성, 디자인, 내용 작성까지 자동 완성. PowerPoint, PDF로 내보내기 가능하며 보고서, 제안서 제작 시간을 획기적으로 단축.", "pricing": "부분무료", "url": "https://gamma.app"},
-        {"name": "Sketch", "description": "맥 전용 UI/UX 디자인 툴. 오랫동안 iOS 앱 디자인의 표준이었으며 가볍고 빠른 성능이 강점. 풍부한 플러그인 생태계와 디자인 시스템 관리 기능을 갖추고 있으며 Mac 사용자 디자이너에게 여전히 인기.", "pricing": "유료", "url": "https://sketch.com"}
+        {"name": "Sketch", "description": "맥 전용 UI/UX 디자인 툴. 오랫동안 iOS 앱 디자인의 표준이었으며 가볍고 빠른 성능이 강점. 풍부한 플러그인 생태계와 디자인 시스템 관리 기능을 갖추고 있으며 Mac 사용자 디자이너에게 여전히 인기.", "pricing": "유료", "url": "https://sketch.com"},
+        {"name": "미리캔버스", "description": "한국형 무료 그래픽 디자인 툴. 카드뉴스, SNS 게시물, 유튜브 썸네일, 프레젠테이션, 명함까지 수만 개의 한국어 템플릿으로 5분 안에 완성. 한글 폰트 지원이 완벽하고 협업 기능도 있어 팀 작업에도 유용하다.", "pricing": "부분무료", "url": "https://www.miricanvas.com"},
+        {"name": "망고보드", "description": "카드뉴스, 인포그래픽, 포스터 제작에 특화된 한국형 디자인 플랫폼. 드래그 앤 드롭으로 누구나 쉽게 감각적인 디자인 완성. 한국 트렌드에 맞는 템플릿이 매주 업데이트되며 SNS 마케팅 콘텐츠 제작에 특히 강하다.", "pricing": "부분무료", "url": "https://www.mangoboard.net"},
+        {"name": "타입폼", "description": "대화형 설문지와 폼을 아름답게 만드는 디자인 툴. 기존 딱딱한 구글 폼과 달리 한 번에 한 질문씩 보여주는 방식으로 응답률이 훨씬 높다. 이벤트 신청, 고객 피드백, 주문서 제작에 최적화된 세련된 폼 빌더.", "pricing": "부분무료", "url": "https://typeform.com"}
       ]
     },
     {
