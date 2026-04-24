@@ -18,7 +18,10 @@ const categoryMap: Record<string, Category> = {
   "생산성": "productivity",
   "배포/호스팅": "hosting",
   "변환 툴": "conversion",
-  "무료 교육": "education"
+  "무료 교육": "education",
+  "AI 글쓰기": "ai-writing",
+  "AI 프레젠테이션": "ai-presentation",
+  "AI 번역/언어": "ai-language"
 };
 
 const badgeMap: Record<string, Badge> = { 

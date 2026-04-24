@@ -28,6 +28,9 @@ const categoryTags: Record<string, string[]> = {
   "hosting": ["웹사이트 배포", "클라우드 호스팅", "백엔드", "정적 사이트"],
   "conversion": ["PDF 변환", "파일 변환", "문서 편집", "형식 변환"],
   "education": ["온라인 강의", "무료 수강", "자기계발", "자격증"],
+  "ai-writing": ["콘텐츠 생성", "문법 교정", "소설 창작", "마케팅 카피"],
+  "ai-presentation": ["슬라이드 자동 생성", "디자인 자동화", "발표 자료", "협업 도구"],
+  "ai-language": ["정교한 번역", "문법 교정", "외국어 학습", "다국어 지원"],
 };
 
 export default function ToolDetailModal({ tool, onClose }: ToolDetailModalProps) {
