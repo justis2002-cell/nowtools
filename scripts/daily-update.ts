@@ -159,9 +159,10 @@ async function updateTools() {
   `;
 
   const content = await callGemini(prompt);
+  const footerText = "\n\n더 다양한 AI 도구와 디자인 툴은 nowtools.kr 메인에서 바로 확인하실 수 있습니다.";
   const fileName = `${date}-daily-ai-tools.md`;
   const filePath = path.join(process.cwd(), 'src/content/tools', fileName);
-  fs.writeFileSync(filePath, content, 'utf-8');
+  fs.writeFileSync(filePath, content + footerText, 'utf-8');
   console.log(`✅ 도구 포스트 저장 완료: ${filePath}`);
 }
 
@@ -206,9 +207,10 @@ async function updateNews() {
   `;
 
   const content = await callGemini(prompt);
+  const footerText = "\n\n더 다양한 AI 도구와 디자인 툴은 nowtools.kr 메인에서 바로 확인하실 수 있습니다.";
   const fileName = `${date}-ai-news.md`;
   const filePath = path.join(process.cwd(), 'src/content/news', fileName);
-  fs.writeFileSync(filePath, content, 'utf-8');
+  fs.writeFileSync(filePath, content + footerText, 'utf-8');
   console.log(`✅ 뉴스 포스트 저장 완료: ${filePath}`);
 }
 
