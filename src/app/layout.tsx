@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   verification: {
     google: "tb29R1F5cG6rb8lUHtNP_Yg8mYwhpejuHq2X-01jMdI",
   },
+  other: {
+    "naver-site-verification": "5377c9ddabbca8a562b2942393077e162e07dca0",
+  },
 };
 
 import Footer from "@/components/Footer";
