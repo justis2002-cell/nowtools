@@ -8,33 +8,43 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-16 shadow-sm border border-gray-100">
           <h1 className="text-4xl font-bold text-gray-900 mb-8">nowtools.kr 소개</h1>
           
-          <div className="prose prose-blue max-w-none text-gray-600 space-y-12 leading-relaxed">
+          <div className="prose prose-blue max-w-none text-gray-600 space-y-10 leading-relaxed">
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">쏟아지는 AI 툴, 이제 한 곳에서 찾으세요.</h2>
-              <p className="text-lg">
-                매일 수백 개의 새로운 AI 툴이 쏟아지는 시대입니다. 어떤 툴이 진짜 쓸만한지, 무료인지 유료인지, 한국어를 지원하는지 일일이 찾아보는 건 너무 번거롭습니다. **nowtools.kr**은 디자이너, 마케터, 크리에이터, 직장인 누구나 바로 쓸 수 있는 툴만 엄선해서 카테고리별로 정리했습니다.
-              </p>
-            </section>
+              
+              <div className="space-y-6 text-lg">
+                <div className="pt-6 border-t border-gray-100">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">이 사이트는 무엇인가요?</h3>
+                  <p>매일 수백 개의 새로운 AI 툴이 등장하는 시대입니다.</p>
+                  <p>어떤 툴이 진짜 쓸만한지, 무료인지 유료인지, 한국어를 지원하는지 일일이 찾아보는 건 너무 번거롭고 시간이 아깝습니다.</p>
+                  <p><strong>nowtools.kr</strong>은 디자이너, 마케터, 크리에이터, 직장인 누구나 바로 쓸 수 있는 툴만 엄선해 카테고리별로 정리한 툴 디렉토리입니다.</p>
+                  <p>원하는 툴을 1분 안에 찾을 수 있도록 돕는 것, 그게 이 사이트가 존재하는 이유입니다.</p>
+                </div>
 
-            <section className="bg-slate-50 p-8 rounded-2xl border border-slate-100">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">어떤 툴을 모았나요?</h2>
-              <p className="mb-4">
-                AI 글쓰기, AI 이미지 생성, AI 영상 편집, AI 음악, AI 코딩, 디자인 툴, 무료 폰트, 이미지 편집, 무료 소스, SNS 툴, 생산성 툴, 변환 툴, 무료 교육까지. 실제로 현업에서 쓰이는 툴들만 직접 검증해서 담았습니다.
-              </p>
-            </section>
+                <div className="pt-8 border-t border-gray-100">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">어떤 툴을 모았나요?</h3>
+                  <p>AI 챗봇, 이미지·영상·음악 생성 AI, AI 코딩·자동화, 디자인·폰트·이미지 편집, 무료 소스, SNS·생산성·변환 툴, 무료 교육, 레퍼런스·영감 사이트까지.</p>
+                  <p>현재 22개 카테개리, 200개 이상의 툴을 수록하고 있으며 실제 현업에서 쓰이는 툴들만 직접 검증해서 담았습니다.</p>
+                </div>
 
-            <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">매일 업데이트됩니다.</h2>
-              <p>
-                Product Hunt에서 매일 급상승하는 AI 툴과 최신 AI 뉴스를 자동으로 수집해 블로그로 제공합니다. 북마크 해두고 매일 확인하세요.
-              </p>
-            </section>
+                <div className="pt-8 border-t border-gray-100">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">매일 업데이트됩니다</h3>
+                  <p>매일 오전 7시, Product Hunt에서 급상승하는 최신 AI 툴과 전 세계 AI 뉴스를 자동으로 수집해 블로그로 제공합니다.</p>
+                  <p>Google Gemini AI와 에디터의 검수를 결합해 단순 나열이 아닌, 실제로 읽히는 콘텐츠를 만들기 위해 노력하고 있습니다.</p>
+                  <p className="text-gray-900 font-medium">북마크 해두고 매일 확인하세요. 😊</p>
+                </div>
 
-            <section className="pt-8 border-t border-gray-100">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 text-accent">우리의 미션</h2>
-              <p className="text-lg font-medium text-gray-800">
-                좋은 툴 하나가 하루의 업무를 바꿉니다. 복잡한 검색은 저희가 대신할 테니, 여러분은 창의적인 작업에만 집중하세요.
-              </p>
+                <div className="pt-12 border-t border-gray-100 mt-12 text-sm text-gray-500">
+                  <h4 className="font-bold text-gray-700 mb-2">면책 고지</h4>
+                  <p>본 사이트는 정보 제공을 목적으로 하며, 각 툴의 가격·정책·기능은 운영사 사정에 따라 변경될 수 있습니다.</p>
+                  <p>중요한 결정 전에는 반드시 해당 툴의 공식 사이트를 직접 확인하시기 바랍니다.</p>
+                </div>
+
+                <div className="pt-6 border-t border-gray-100">
+                  <h4 className="font-bold text-gray-700 mb-2">문의</h4>
+                  <p>오류 제보 및 피드백 → <a href="mailto:cocori7654@gmail.com" className="text-blue-600 hover:underline">cocori7654@gmail.com</a></p>
+                </div>
+              </div>
             </section>
           </div>
         </div>
