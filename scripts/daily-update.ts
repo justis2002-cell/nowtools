@@ -13,6 +13,27 @@ dotenv.config({ path: path.join(process.cwd(), '.env.local') });
 const parser = new Parser();
 const GEMINI_API_KEY = (process.env.GEMINI_API_KEY || '').trim();
 
+/**
+ * 특정 디렉토리 내의 마크다운 파일에서 사용된 모든 URL을 수집합니다.
+ */
+function getUsedUrls(directory: string): Set<string> {
+  const urls = new Set<string>();
+  if (!fs.existsSync(directory)) return urls;
+  
+  const files = fs.readdirSync(directory);
+  for (const file of files) {
+    if (file.endsWith('.md')) {
+      const content = fs.readFileSync(path.join(directory, file), 'utf-8');
+      // 마크다운 링크 추출: [텍스트](URL)
+      const matches = content.matchAll(/\[.*?\]\((https?:\/\/.*?)\)/g);
+      for (const match of matches) {
+        urls.add(match[1]);
+      }
+    }
+  }
+  return urls;
+}
+
 async function getProductHuntToken() {
   const response = await fetch('https://api.producthunt.com/v2/oauth/token', {
     method: 'POST',
@@ -27,10 +48,10 @@ async function getProductHuntToken() {
   return data.access_token;
 }
 
-async function fetchTopAITools(token: string) {
+async function fetchTopAITools(token: string, count = 20) {
   const query = `
     query {
-      posts(first: 3, order: RANKING, topic: "artificial-intelligence") {
+      posts(first: ${count}, order: RANKING, topic: "artificial-intelligence") {
         edges {
           node {
             name
@@ -61,10 +82,10 @@ async function fetchTopAITools(token: string) {
   return result.data.posts.edges.map((edge: any) => edge.node);
 }
 
-async function fetchAINews() {
+async function fetchAINews(count = 30) {
   console.log('📰 Google News RSS 수집 중...');
   const feed = await parser.parseURL('https://news.google.com/rss/search?q=AI&hl=ko&gl=KR&ceid=KR:ko');
-  return feed.items.slice(0, 5).map((item: any) => ({
+  return feed.items.slice(0, count).map((item: any) => ({
     title: item.title,
     link: item.link,
     pubDate: item.pubDate
@@ -126,7 +147,18 @@ async function callGemini(prompt: string) {
 async function updateTools() {
   console.log('🛠️ 급상승 AI 툴 업데이트 시작...');
   const token = await getProductHuntToken();
-  const tools = await fetchTopAITools(token);
+  const allTools = await fetchTopAITools(token);
+  
+  // 이미 사용된 툴 URL 가져오기
+  const usedUrls = getUsedUrls(path.join(process.cwd(), 'src/content/tools'));
+  // 중복되지 않은 툴만 필터링 후 상위 3개 선택
+  const tools = allTools.filter((t: any) => !usedUrls.has(t.url)).slice(0, 3);
+
+  if (tools.length === 0) {
+    console.log('⏩ 모든 툴이 이미 소개되었습니다. 업데이트를 건너뜁니다.');
+    return;
+  }
+
   // 한국 시간(KST) 기준으로 오늘 날짜 가져오기
   const now = new Date();
   const kstOffset = 9 * 60 * 60 * 1000;
@@ -168,7 +200,18 @@ async function updateTools() {
 
 async function updateNews() {
   console.log('🗞️ AI 뉴스 업데이트 시작...');
-  const news = await fetchAINews();
+  const allNews = await fetchAINews();
+  
+  // 이미 사용된 뉴스 URL 가져오기
+  const usedUrls = getUsedUrls(path.join(process.cwd(), 'src/content/news'));
+  // 중복되지 않은 뉴스만 필터링 후 상위 5개 선택
+  const news = allNews.filter((n: any) => !usedUrls.has(n.link)).slice(0, 5);
+
+  if (news.length === 0) {
+    console.log('⏩ 새로운 뉴스가 없습니다. 업데이트를 건너뜁니다.');
+    return;
+  }
+
   // 한국 시간(KST) 기준으로 오늘 날짜 가져오기
   const now = new Date();
   const kstOffset = 9 * 60 * 60 * 1000;
