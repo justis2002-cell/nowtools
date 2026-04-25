@@ -191,8 +191,18 @@ async function updateTools() {
   `;
 
   const content = await callGemini(prompt);
+  
+  // SEO를 위한 영문 슬러그 생성 요청
+  const slugPrompt = `
+    다음 도구들의 이름을 바탕으로 URL에 사용할 짧은 영문 슬러그(slug)를 만들어줘. 
+    예: meta-llama-3-tool. 공백은 하이픈(-)으로 연결하고 소문자만 사용해.
+    도구 이름들: ${tools.map((t: any) => t.name).join(', ')}
+    오직 슬러그 문자열만 출력해.
+  `;
+  const slug = (await callGemini(slugPrompt)).trim().toLowerCase().replace(/[^a-z0-9-]/g, '');
+  
   const footerText = "\n\n더 다양한 AI 도구와 디자인 툴은 nowtools.kr 메인에서 바로 확인하실 수 있습니다.";
-  const fileName = `${date}-daily-ai-tools.md`;
+  const fileName = `${date}-${slug}.md`;
   const filePath = path.join(process.cwd(), 'src/content/tools', fileName);
   fs.writeFileSync(filePath, content + footerText, 'utf-8');
   console.log(`✅ 도구 포스트 저장 완료: ${filePath}`);
@@ -250,8 +260,18 @@ async function updateNews() {
   `;
 
   const content = await callGemini(prompt);
+
+  // SEO를 위한 영문 슬러그 생성 요청
+  const slugPrompt = `
+    다음 뉴스 제목들을 바탕으로 URL에 사용할 짧은 영문 슬러그(slug)를 만들어줘. 
+    핵심 키워드 3-4개만 뽑아서 하이픈(-)으로 연결해. 예: apple-ai-news-update
+    뉴스 제목들: ${news.map((n: any) => n.title).join(', ')}
+    오직 슬러그 문자열만 출력해.
+  `;
+  const slug = (await callGemini(slugPrompt)).trim().toLowerCase().replace(/[^a-z0-9-]/g, '');
+
   const footerText = "\n\n더 다양한 AI 도구와 디자인 툴은 nowtools.kr 메인에서 바로 확인하실 수 있습니다.";
-  const fileName = `${date}-ai-news.md`;
+  const fileName = `${date}-${slug}.md`;
   const filePath = path.join(process.cwd(), 'src/content/news', fileName);
   fs.writeFileSync(filePath, content + footerText, 'utf-8');
   console.log(`✅ 뉴스 포스트 저장 완료: ${filePath}`);
