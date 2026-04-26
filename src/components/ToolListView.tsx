@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import CategoryFilter from "@/components/CategoryFilter";
@@ -19,6 +19,11 @@ export default function ToolListView({ initialCategory = "all", hideHero = false
   const [activeCategory, setActiveCategory] = useState<Category>(initialCategory);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
+
+  // URL 변경 등으로 initialCategory가 바뀌면 상태를 동기화합니다.
+  useEffect(() => {
+    setActiveCategory(initialCategory);
+  }, [initialCategory]);
 
   const filteredTools = useMemo(() => {
     return mockTools.filter((tool) => {
