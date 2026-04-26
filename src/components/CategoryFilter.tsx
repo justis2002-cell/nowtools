@@ -4,10 +4,9 @@ import Link from "next/link";
 
 interface CategoryFilterProps {
   activeCategory: Category;
-  onCategoryChange?: (category: Category) => void;
 }
 
-export default function CategoryFilter({ activeCategory, onCategoryChange }: CategoryFilterProps) {
+export default function CategoryFilter({ activeCategory }: CategoryFilterProps) {
   const dynamicCategories = getDynamicCategories();
 
   return (
@@ -21,7 +20,6 @@ export default function CategoryFilter({ activeCategory, onCategoryChange }: Cat
               <Link
                 key={category.id}
                 href={href}
-                onClick={() => onCategoryChange?.(category.id as Category)}
                 className={`flex-none w-[calc(50%-8px)] sm:w-[calc(33.33%-8px)] md:w-[calc(20%-8px)] lg:w-[calc(12.5%-8px)] px-2 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 border text-center active:scale-95 hover:scale-[1.02] ${
                   activeCategory === category.id
                     ? "bg-accent border-accent text-white shadow-lg shadow-accent/20"
