@@ -59,8 +59,8 @@ export default function ToolDetailModal({ tool, onClose }: ToolDetailModalProps)
   const tags = categoryTags[tool.category] || [];
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-300 overflow-y-auto">
-      <div className="glass w-full max-w-3xl rounded-[2.5rem] overflow-hidden relative animate-in slide-in-from-bottom-8 duration-300 my-8">
+    <div className="fixed inset-0 z-[100] flex items-start justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-300 overflow-y-auto">
+      <div className="glass w-full max-w-3xl rounded-3xl md:rounded-[2.5rem] overflow-hidden relative animate-in slide-in-from-bottom-8 duration-300 my-auto md:my-8">
         <button
           onClick={onClose}
           className="absolute top-6 right-6 p-2 text-slate-400 hover:text-white transition-colors z-10"
@@ -68,10 +68,10 @@ export default function ToolDetailModal({ tool, onClose }: ToolDetailModalProps)
           <X className="w-6 h-6" />
         </button>
 
-        <div className="p-8 md:p-12">
+        <div className="p-6 md:p-12">
           {/* 상단: 로고 + 이름 + 뱃지 */}
           <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-10">
-            <div className="w-32 h-32 bg-white rounded-[2rem] flex items-center justify-center border border-slate-200 shadow-2xl shrink-0 overflow-hidden">
+            <div className="w-32 h-32 bg-white rounded-2xl md:rounded-[2.5rem] flex items-center justify-center border border-slate-200 shadow-2xl shrink-0 overflow-hidden">
               <img
                 src={tool.logo}
                 alt={tool.name}
