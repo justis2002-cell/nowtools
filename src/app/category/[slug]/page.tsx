@@ -3,9 +3,9 @@ import { getDynamicCategories } from "@/lib/category-data";
 import { Category } from "@/types/tool";
 
 interface CategoryPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export function generateStaticParams() {
@@ -18,8 +18,8 @@ export function generateStaticParams() {
     }));
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
-  const { slug } = params;
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { slug } = await params;
   
   return (
     <ToolListView 

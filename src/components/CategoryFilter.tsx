@@ -1,3 +1,5 @@
+"use client";
+
 import { Category } from "@/types/tool";
 import { getDynamicCategories } from "@/lib/category-data";
 import Link from "next/link";

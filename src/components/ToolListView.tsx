@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { usePathname } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import CategoryFilter from "@/components/CategoryFilter";
@@ -16,11 +17,18 @@ interface ToolListViewProps {
 }
 
 export default function ToolListView({ initialCategory = "all", hideHero = false }: ToolListViewProps) {
+  const pathname = usePathname();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
 
-  // URL 파라미터로 받은 initialCategory를 직접 필터링의 기준으로 사용합니다.
-  const activeCategory = initialCategory;
+  // 현재 URL 경로에서 카테고리 정보를 직접 추출하여 가장 정확한 상태를 유지합니다.
+  const activeCategory = useMemo(() => {
+    if (pathname === "/") return "all";
+    if (pathname.startsWith("/category/")) {
+      return pathname.replace("/category/", "") as Category;
+    }
+    return initialCategory;
+  }, [pathname, initialCategory]);
 
   const filteredTools = useMemo(() => {
     return mockTools.filter((tool) => {
