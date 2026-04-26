@@ -10,7 +10,7 @@
         { "name": "Microsoft Copilot", "description": "마이크로소프트의 AI 어시스턴트. Word, Excel, PowerPoint, Outlook 등 오피스 365 전체와 연동. 직장인이라면 업무 문서 작성과 데이터 분석에 바로 활용 가능.", "pricing": "부분무료", "url": "https://copilot.microsoft.com" },
         { "name": "Meta AI", "description": "메타가 만든 무료 AI 챗봇. 인스타그램, 페이스북, WhatsApp 안에서 바로 사용 가능. 별도 가입 없이 SNS 앱 안에서 바로 AI 기능을 쓸 수 있다는 게 최대 장점.", "pricing": "무료", "url": "https://meta.ai" },
         { "name": "Grok", "description": "X(트위터)를 운영하는 xAI가 만든 AI 챗봇. X 플랫폼의 실시간 트렌드와 SNS 데이터 기반으로 최신 정보 제공. 유머러스한 답변 스타일이 특징이며 X 프리미엄 구독자는 무료.", "pricing": "부분무료", "url": "https://grok.com" },
-        { "name": "Notion AI", "description": "Notion 문서 안에서 바로 쓰는 AI 어시스턴트. 글 초안 작성, 요약, 번역, 액션 아이템 추출 등을 문서 작업 중에 바로 실행 가능. Notion을 이미 쓰고 있다면 추가 요금으로 바로 활성화.", "pricing": "유료", "url": "https://notion.so" },
+        { "name": "Notion AI", "description": "Notion 문서 안에서 바로 쓰는 AI 어시스턴트. 글 초안 작성, 요약, 번역, 액션 아이템 추출 등을 문서 작업 중에 바로 실행 가능. Notion을 이미 쓰고 있다면 추가 요금으로 바로 활성화.", "pricing": "부분무료", "url": "https://notion.so" },
         { "name": "Jasper", "description": "마케팅 콘텐츠 제작에 특화된 AI 글쓰기 툴. 블로그, 광고 카피, SNS 포스팅, 이메일 등 마케팅 목적의 글을 빠르게 대량 생산 가능. 브랜드 보이스 설정으로 일관된 톤 유지.", "pricing": "유료", "url": "https://jasper.ai" },
         { "name": "HyperCLOVA X", "description": "네이버가 만든 한국어 특화 AI. 한국 문화와 언어를 깊이 이해하며 네이버 서비스와 연동이 강점. 한국어 글쓰기, 번역, 고객 응대 등 한국 비즈니스 환경에 최적화.", "pricing": "부분무료", "url": "https://clova.ai" },
         { "name": "Google AI Studio", "description": "구글의 Gemini API를 직접 테스트하고 개발할 수 있는 무료 플랫폼. 프롬프트 실험, API 키 발급을 무료로 해볼 수 있어 개발자나 AI에 관심 있는 사람에게 유용.", "pricing": "부분무료", "url": "https://aistudio.google.com" },
@@ -109,7 +109,7 @@
         {"name": "Make", "description": "Zapier보다 강력한 시각적 자동화 플랫폼. 복잡한 분기 처리와 데이터 가공이 가능하며 가격 대비 기능이 훨씬 넉넉하다. 마케터나 스몰 비즈니스 운영자에게 특히 인기 있는 자동화 툴.", "pricing": "부분무료", "url": "https://make.com"},
         {"name": "n8n", "description": "직접 서버에 설치해 운영하는 오픈소스 자동화 툴. 완전한 데이터 주권을 원하는 개발자나 기업에 최적화. 무제한 자동화를 자체 서버에서 무료로 운영 가능하며 커스터마이징 자유도가 최고.", "pricing": "부분무료", "url": "https://n8n.io"},
         {"name": "IFTTT", "description": "If This Then That의 약자로 조건 기반 자동화를 가장 쉽게 만들 수 있는 툴. 스마트홈 기기, SNS, 날씨 앱 등 다양한 서비스를 간단한 조건으로 연결. 자동화 입문자에게 가장 친근한 플랫폼.", "pricing": "부분무료", "url": "https://ifttt.com"},
-        {"name": "Notion AI", "description": "Notion 안에서 바로 쓰는 AI 자동화 어시스턴트. 회의록 요약, 할일 자동 추출, 문서 초안 작성을 Notion 워크스페이스 안에서 처리. Notion을 이미 사용 중이라면 추가 요금으로 즉시 활성화 가능.", "pricing": "유료", "url": "https://notion.so/product/ai"},
+        {"name": "Notion AI", "description": "Notion 안에서 바로 쓰는 AI 자동화 어시스턴트. 회의록 요약, 할일 자동 추출, 문서 초안 작성을 Notion 워크스페이스 안에서 처리. Notion을 이미 사용 중이라면 추가 요금으로 즉시 활성화 가능.", "pricing": "부분무료", "url": "https://notion.so/product/ai"},
         {"name": "Activepieces", "description": "오픈소스 기반의 Zapier 대안. 셀프 호스팅이 가능하고 무료 플랜이 넉넉하다. 직관적인 인터페이스로 초보자도 쉽게 자동화를 구성할 수 있으며 빠르게 성장 중인 자동화 플랫폼.", "pricing": "부분무료", "url": "https://activepieces.com"},
         {"name": "Relay.app", "description": "AI와 자동화를 결합한 신세대 워크플로우 툴. 단순 자동화를 넘어 AI가 중간에 판단하고 결정하는 스마트 워크플로우를 만들 수 있다. 반복 업무를 AI가 알아서 처리하게 설정 가능.", "pricing": "부분무료", "url": "https://relay.app"},
         {"name": "Microsoft Power Automate", "description": "마이크로소프트의 기업용 자동화 플랫폼. Office 365, Teams, SharePoint와 완벽히 연동되며 RPA(로봇 프로세스 자동화)로 데스크톱 업무도 자동화 가능. 기업 환경에서 IT 없이 업무 자동화 구현에 최적.", "pricing": "부분무료", "url": "https://powerautomate.microsoft.com"}
@@ -260,7 +260,7 @@
         {"name": "Rytr", "description": "가성비 최고의 AI 글쓰기 툴. 40개 이상의 글쓰기 템플릿과 30개 언어를 지원하며 블로그 포스팅, 제품 설명, 이메일, 면접 답변까지 다양한 용도로 활용 가능. 무료 플랜으로 월 10,000자까지 생성할 수 있어 부담 없이 시작 가능.", "pricing": "부분무료", "url": "https://rytr.me"},
         {"name": "Grammarly", "description": "영어 문법 교정과 글쓰기 품질 향상의 글로벌 표준 툴. 오타, 문법 오류, 어색한 표현을 실시간으로 잡아주고 글의 톤과 명확성까지 분석해준다. 크롬 익스텐션으로 설치하면 이메일, 문서, SNS 등 어디서든 자동 교정.", "pricing": "부분무료", "url": "https://grammarly.com"},
         {"name": "Hemingway Editor", "description": "글을 더 명확하고 간결하게 다듬어주는 영문 교정 툴. 복잡한 문장, 수동태, 부사 남용 등 읽기 어려운 표현을 색상으로 강조해 한눈에 파악 가능. 군더더기 없이 강한 문체를 원하는 작가와 마케터에게 필수.", "pricing": "부분무료", "url": "https://hemingwayapp.com"},
-        {"name": "Notion AI", "description": "Notion 문서 안에서 바로 쓰는 AI 글쓰기 어시스턴트. 글 초안 작성, 요약, 번역, 어조 변경, 액션 아이템 추출까지 문서 작업 중에 바로 실행 가능. 글 쓰는 도중 막히면 AI에게 이어 써달라고 요청하면 바로 이어준다.", "pricing": "유료", "url": "https://notion.so/product/ai"},
+        {"name": "Notion AI", "description": "Notion 문서 안에서 바로 쓰는 AI 글쓰기 어시스턴트. 글 초안 작성, 요약, 번역, 어조 변경, 액션 아이템 추출까지 문서 작업 중에 바로 실행 가능. 글 쓰는 도중 막히면 AI에게 이어 써달라고 요청하면 바로 이어준다.", "pricing": "부분무료", "url": "https://notion.so/product/ai"},
         {"name": "Wordtune", "description": "문장을 더 자연스럽고 다양하게 다시 써주는 AI 리라이팅 툴. 같은 내용을 캐주얼하게, 격식 있게, 짧게, 길게 등 다양한 버전으로 바꿔준다. 영어 글쓰기가 어색한 사람에게 특히 유용하며 크롬 익스텐션으로 어디서든 사용 가능.", "pricing": "부분무료", "url": "https://wordtune.com"},
         {"name": "Sudowrite", "description": "소설, 단편, 스토리 창작에 특화된 AI 글쓰기 툴. 플롯 개발, 캐릭터 묘사, 장면 확장, 대화 생성 등 창작 글쓰기에 특화된 기능을 제공. 글 막힘(writer's block)을 해결하는 데 최고의 AI 창작 파트너.", "pricing": "유료", "url": "https://sudowrite.com"},
         {"name": "QuillBot", "description": "문장 바꿔쓰기(패러프레이징)와 요약 기능으로 유명한 AI 글쓰기 툴. 같은 내용을 다른 표현으로 자연스럽게 변환해주며 표절 검사, 문법 교정, 번역 기능도 포함. 리포트 작성이나 이메일 다듬기에 많이 쓰인다.", "pricing": "부분무료", "url": "https://quillbot.com"}
