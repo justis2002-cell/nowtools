@@ -24,12 +24,12 @@ category: "news"
 *   **인사이트:** 이 뉴스는 전통적인 소프트웨어 기업이 AI 시대에 어떻게 전략적으로 변신해야 하는지를 잘 보여줍니다. 한컴은 자사의 핵심 역량인 문서 기술을 AI 시대에 맞게 재해석하여 새로운 비즈니스 모델을 창출하고 있습니다. 이는 기존 시장을 잃는 위기 대신, 데이터 기반 AI 서비스라는 새로운 시장으로 확장하는 기회로 전환하는 모범 사례입니다. 앞으로 한컴은 hwpx 기반의 AI 기술을 통해 문서 지능화 시장에서 중요한 역할을 할 것으로 예상되며, 다른 레거시 기업들에게도 AI 전환의 방향성을 제시하는 이정표가 될 것입니다.
 *   [기사 원문 보기](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XVEkwSDhrNGtKRXlNTGt0NU5Uem9SOE11a194VGlPNnU1QzFaWnNzUWxBSDVKVFliclAwNzVtc2pYSlRZeW1Bd3lLbng4aVNzT25OUjJVblNwbFxlM1UyNWJTWTc2TVnSAWxBVV95cUxQcHRVZ1RwbVZLb19BTkNmbFNueUc4cnhyaDJ4ZGZkOXdQekhwOVphRUJVSEktUDVydVd3WXpucmRpNlI0ZzhYUjlIdEtKeFFWTnZXcEtxRHZ4S0JaY2ZYSmtFSEw3dGJlZTZnNlo?oc=5)
 
-#### 3. ‘hwp 첨부 파일’ 역사 속으로…AI가 못 읽어 공문서에서 ‘퇴출’
+#### 3. AI 반도체 거물들의 실적 잔치…구글·MS, AI 투자가 결실로
 
-*   **출처:** 한겨레
-*   **핵심 내용:** AI 기술 활용을 막는 걸림돌로 지목되어 온 'hwp' 포맷의 공문서 첨부 파일이 점차 역사 속으로 사라질 전망입니다. 정부가 2026년까지 공공 문서의 hwpx 전환을 추진함에 따라, 공공기관은 물론 시민들도 hwp 기반의 첨부 파일 사용에서 벗어나게 될 것입니다. AI가 hwp 파일의 폐쇄적인 구조 때문에 데이터를 제대로 파싱(parsing)하고 분석하지 못하는 한계를 극복하기 위한 조치입니다. 이로써 공공 서비스의 효율성을 높이고, 대국민 서비스 품질을 향상시키며, 국가 단위의 데이터 기반 의사결정 체계를 강화하는 데 기여할 것으로 기대됩니다.
-*   **인사이트:** 이 소식은 기술 표준이 국가 시스템에 미치는 영향력을 명확히 보여줍니다. AI 시대에는 데이터 접근성과 활용성이 곧 경쟁력이 됩니다. hwp 포맷의 '퇴출'은 단순한 파일 형식 변경을 넘어, 국가 행정의 디지털 전환 가속화와 AI 생태계 구축의 필수적인 전제 조건입니다. 일반 시민과 기업들은 공공기관과의 문서 교환 시 hwpx 포맷에 익숙해져야 할 것이며, 이는 장기적으로 한국 사회 전체의 디지털 리터러시를 향상시키는 계기가 될 수 있습니다. 기술 변화에 대한 적응과 교육이 중요해지는 시점입니다.
-*   [기사 원문 보기](https://news.google.com/rss/articles/CBMiYAFVX3lxTE5pUDVKb19TTEtwNDBkcFAxLUJjdjFNamswVnV3UWdycFdya0VkZXAzbEY0OExNQkJWVUdVVFJxd1JGWjlPYTRVSmpaLXAyN3VEdlBBaXdkbXF5Vjg1Z1Vmag?oc=5)
+*   **출처:** 뉴시스
+*   **핵심 내용:** 구글(알파벳)과 마이크로소프트가 AI 분야의 강력한 성장에 힘입어 시장 예상을 뛰어넘는 실적을 발표했습니다. 특히 클라우드 부문에서의 AI 서비스 수요가 폭발적으로 증가하며, 막대한 AI 투자가 실제 수익으로 연결되고 있음을 증명했습니다. 구글은 사상 첫 배당까지 실시하며 AI에 대한 자신감을 내비쳤습니다.
+*   **인사이트:** 'AI 거품론'을 잠재우고 AI가 기업의 실질적인 수익원이 되었음을 확인시켜준 사례입니다. 이는 앞으로 기업들의 AI 도입이 더욱 가속화될 것임을 의미하며, 투자 시장에서도 AI 기술의 실질적인 가치를 재평가하는 계기가 될 것입니다.
+*   [기사 원문 보기](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5KZXZoXzVfUXFrUWVibTFGYm91MGlydW9TUU82Rzl6NDJvSkVxOHlHd2NiQk4xZENPbEswYnBUZTN4NDFxZkN1LVJ3VHBjWTQ?oc=5)
 
 #### 4. "잘 키운 로봇 하나, 열 자식 안 부러울 것… 피지컬 AI가 한국의 기회"
 
@@ -51,4 +51,4 @@ category: "news"
 
 나아가 K-뷰티 산업에서의 AI 활용 사례는 AI가 창의성과 감성을 요구하는 분야에서도 기획부터 제조, 마케팅에 이르는 전 과정에 혁신을 가져올 수 있음을 증명합니다. 이는 모든 산업이 AI를 통해 새로운 경쟁 우위를 확보하고 소비자 가치를 창출할 수 있는 잠재력을 가지고 있음을 의미합니다. 앞으로 우리는 이러한 AI 전환이 가속화될 것을 주시해야 합니다. 정부는 AI 인프라 구축과 정책 지원을 지속하고, 기업들은 자사의 핵심 역량을 AI와 융합하여 새로운 비즈니스 모델을 창출하는 데 주력해야 할 것입니다. 또한, AI 기술의 윤리적 사용과 사회적 파급 효과에 대한 심도 깊은 논의 또한 지속되어야 할 중요한 과제입니다.
 
-더 다양한 AI 도구와 디자인 툴은 nowtools.kr 메인에서 바로 확인하실 수 있습니다.
+더 다양한 AI 도구와 디자인 툴은 [nowtools.kr](https://nowtools.kr) 메인에서 바로 확인하실 수 있습니다.
