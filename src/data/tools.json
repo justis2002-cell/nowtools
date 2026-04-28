@@ -142,7 +142,7 @@
         {"name": "눈누", "description": "상업용 무료 한글 폰트를 한눈에 찾을 수 있는 국내 최고 폰트 사이트. 수백 개의 한글 폰트를 미리보기로 비교하고 바로 다운로드 가능. 광고, 유튜브 썸네일, 블로그 등 상업적 이용 가능 여부를 명확히 표시해줘 믿고 쓸 수 있다.", "pricing": "무료", "url": "https://noonnu.cc"},
         {"name": "Google Fonts", "description": "구글이 제공하는 무료 웹폰트 라이브러리. 1,500개 이상의 폰트를 무료로 사용 가능하고 웹사이트에 한 줄 코드로 바로 적용 가능. 상업용 무료이며 한글 폰트(Noto Sans KR, Nanum Gothic 등)도 포함.", "pricing": "무료", "url": "https://fonts.google.com"},
         {"name": "Naver 나눔글꼴", "description": "네이버가 만든 무료 한글 폰트 모음. 나눔고딕, 나눔명조, 나눔바른고딕 등 실무에서 많이 쓰이는 폰트를 무료 상업용으로 제공. 웹폰트로도 사용 가능해 블로그, 상세페이지, 웹사이트에 바로 적용 가능.", "pricing": "무료", "url": "https://hangeul.naver.com/font"},
-        {"name": "배달의민족 무료 폰트", "description": "배달의민족이 만든 개성 있는 무료 한글 폰트. 한나체, 주아체, 도현체 등 브랜드 색깔이 강한 폰트를 상업용 무료로 제공. SNS 포스팅, 유튜브 썸네일, 홍보물 제작에 특히 잘 어울리는 개성 있는 서체.", "pricing": "무료", "url": "https://www.baemin.com/about/font"},
+        {"name": "산돌구름", "description": "산돌에서 운영하는 폰트 플랫폼. 앱 설치만 해도 무료 폰트 2,800종 이상을 바로 사용 가능. 유료 구독 시 프리미엄 폰트까지 무제한 사용 가능하며 개인 및 기업용 라이선스 제공으로 상업적 이용도 안전하게 가능.", "pricing": "부분무료", "url": "https://www.sandollcloud.com"},
         {"name": "Adobe Fonts", "description": "어도비가 제공하는 프리미엄 웹폰트 서비스. Creative Cloud 구독자라면 수천 개의 고품질 폰트를 추가 비용 없이 사용 가능. Photoshop, Illustrator에서 바로 적용되며 웹폰트로도 쓸 수 있다.", "pricing": "유료", "url": "https://fonts.adobe.com"},
         {"name": "DaFont", "description": "전 세계 디자이너들이 공유하는 무료 폰트 사이트. 영문 폰트 위주이며 핸드라이팅, 레트로, 고딕, 판타지 등 개성 있는 폰트가 가득하다. 상업용 여부는 각 폰트별로 확인 필요.", "pricing": "무료", "url": "https://dafont.com"},
         {"name": "Fontshare", "description": "Indian Type Foundry가 운영하는 고품질 무료 폰트 사이트. 전문 폰트 회사에서 만든 프리미엄급 폰트를 무료 상업용으로 제공. 영문 폰트 위주이며 디자인 감각이 뛰어난 폰트들이 많다.", "pricing": "무료", "url": "https://fontshare.com"},
