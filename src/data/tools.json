@@ -35,7 +35,8 @@
         { "name": "Flux 2", "description": "Black Forest Labs가 만든 고품질 오픈소스 AI 이미지 생성 모델. 사실적인 인물 사진과 복잡한 장면 묘사에 강하다. 다양한 플랫폼에서 Flux 모델을 무료로 사용 가능.", "pricing": "부분무료", "url": "https://blackforestlabs.ai" },
         { "name": "Microsoft Designer", "description": "마이크로소프트의 AI 이미지 생성 및 디자인 툴. DALL-E 기반으로 고품질 이미지를 생성하며 소셜 미디어 게시물, 초대장, 포스터 등 템플릿을 자동으로 디자인해준다.", "pricing": "부분무료", "url": "https://designer.microsoft.com" },
         { "name": "NightCafe", "description": "다양한 AI 모델을 지원하는 이미지 생성 플랫폼. Stable Diffusion, DALL-E 등 여러 모델을 한 곳에서 비교하며 사용 가능. 커뮤니티 기능이 있어 다른 사용자 작품에서 영감을 얻을 수 있다.", "pricing": "부분무료", "url": "https://nightcafe.studio" },
-        { "name": "Playground AI", "description": "무료로 넉넉하게 쓸 수 있는 AI 이미지 생성 툴. 하루 500장까지 무료 생성 가능하며 고품질 이미지를 빠르게 만들 수 있다. 초보자도 쉽게 쓸 수 있는 직관적인 인터페이스가 강점.", "pricing": "부분무료", "url": "https://playground.com" }
+        { "name": "Playground AI", "description": "무료로 넉넉하게 쓸 수 있는 AI 이미지 생성 툴. 하루 500장까지 무료 생성 가능하며 고품질 이미지를 빠르게 만들 수 있다. 초보자도 쉽게 쓸 수 있는 직관적인 인터페이스가 강점.", "pricing": "부분무료", "url": "https://playground.com" },
+        { "name": "Flair AI", "description": "AI 제품 광고 사진 생성 특화 플랫폼. 제품 이미지를 업로드하면 전문 스튜디오 수준의 광고 사진을 자동으로 생성. 스마트스토어, 쇼핑몰 대표 이미지 제작에 최적화. 별도 포토그래퍼 없이 고퀄리티 제품 사진 제작 가능.", "pricing": "부분무료", "url": "https://flair.ai" }
       ]
     },
     {
@@ -130,7 +131,9 @@
         {"name": "Sketch", "description": "맥 전용 UI/UX 디자인 툴. 오랫동안 iOS 앱 디자인의 표준이었으며 가볍고 빠른 성능이 강점. 풍부한 플러그인 생태계와 디자인 시스템 관리 기능을 갖추고 있으며 Mac 사용자 디자이너에게 여전히 인기.", "pricing": "유료", "url": "https://sketch.com"},
         {"name": "미리캔버스", "description": "한국형 무료 그래픽 디자인 툴. 카드뉴스, SNS 게시물, 유튜브 썸네일, 프레젠테이션, 명함까지 수만 개의 한국어 템플릿으로 5분 안에 완성. 한글 폰트 지원이 완벽하고 협업 기능도 있어 팀 작업에도 유용하다.", "pricing": "부분무료", "url": "https://www.miricanvas.com"},
         {"name": "망고보드", "description": "카드뉴스, 인포그래픽, 포스터 제작에 특화된 한국형 디자인 플랫폼. 드래그 앤 드롭으로 누구나 쉽게 감각적인 디자인 완성. 한국 트렌드에 맞는 템플릿이 매주 업데이트되며 SNS 마케팅 콘텐츠 제작에 특히 강하다.", "pricing": "부분무료", "url": "https://www.mangoboard.net"},
-        {"name": "타입폼", "description": "대화형 설문지와 폼을 아름답게 만드는 디자인 툴. 기존 딱딱한 구글 폼과 달리 한 번에 한 질문씩 보여주는 방식으로 응답률이 훨씬 높다. 이벤트 신청, 고객 피드백, 주문서 제작에 최적화된 세련된 폼 빌더.", "pricing": "부분무료", "url": "https://typeform.com"}
+        {"name": "타입폼", "description": "대화형 설문지와 폼을 아름답게 만드는 디자인 툴. 기존 딱딱한 구글 폼과 달리 한 번에 한 질문씩 보여주는 방식으로 응답률이 훨씬 높다. 이벤트 신청, 고객 피드백, 주문서 제작에 최적화된 세련된 폼 빌더.", "pricing": "부분무료", "url": "https://typeform.com"},
+        {"name": "Lottielab", "description": "Lottie 애니메이션을 만들고 편집하는 모션 디자인 툴. GIF보다 용량이 작고 화질이 선명한 Lottie 파일을 직관적으로 제작 가능. 웹이나 앱에 바로 적용할 수 있는 애니메이션을 코딩 없이 만들 수 있다.", "pricing": "부분무료", "url": "https://www.lottielab.com"},
+        {"name": "Visily", "description": "AI 기반 UI 디자인 툴. 스크린샷을 업로드하면 편집 가능한 와이어프레임으로 자동 변환. 디자인 경험이 없어도 몇 분 만에 고퀄리티 프로토타입 제작 가능. Figma와 연동 지원.", "pricing": "부분무료", "url": "https://www.visily.ai"}
       ]
     },
     {
@@ -171,7 +174,10 @@
         { "name": "Mockup World", "description": "고품질 무료 목업 템플릿 모음 사이트. 스마트폰, 노트북, 명함, 패키지 등 다양한 목업을 무료로 다운로드 가능. 포트폴리오, 상세페이지, 클라이언트 제안서에 작업물을 실감나게 표현할 때 유용.", "pricing": "무료", "url": "https://mockupworld.co" },
         { "name": "Storyset", "description": "웹사이트와 앱에 쓰기 좋은 무료 일러스트 사이트. Freepik이 운영하며 다양한 스타일의 일러스트를 SVG로 다운로드 가능. 색상 커스터마이징도 가능해 브랜드 색상에 맞게 조정해서 사용 가능.", "pricing": "부분무료", "url": "https://storyset.com" },
         { "name": "unDraw", "description": "오픈소스 SVG 일러스트 모음 사이트. 색상을 사이트에서 바로 변경해 브랜드 색상에 맞는 일러스트를 무료 다운로드 가능. 스타트업, 테크 회사 웹사이트에서 많이 쓰이는 깔끔하고 모던한 스타일의 일러스트.", "pricing": "무료", "url": "https://undraw.co" },
-        { "name": "Mixkit", "description": "무료 동영상 클립, 음악, 사운드 이펙트, 영상 템플릿을 모아둔 사이트. 상업용 무료이며 고품질 4K 영상 소스까지 제공. 유튜브 영상, SNS 콘텐츠, 광고 영상 제작에 바로 활용 가능.", "pricing": "무료", "url": "https://mixkit.co" }
+        { "name": "Mixkit", "description": "무료 동영상 클립, 음악, 사운드 이펙트, 영상 템플릿을 모아둔 사이트. 상업용 무료이며 고품질 4K 영상 소스까지 제공. 유튜브 영상, SNS 콘텐츠, 광고 영상 제작에 바로 활용 가능.", "pricing": "무료", "url": "https://mixkit.co" },
+        { "name": "Mediamodifier", "description": "온라인 목업 생성 플랫폼. 15,000개 이상의 목업 템플릿을 브라우저에서 바로 편집 가능. 스마트폰, 패키지, SNS 광고 목업 등 다양한 카테고리 제공. 별도 프로그램 설치 없이 어디서든 사용 가능.", "pricing": "부분무료", "url": "https://mediamodifier.com" },
+        { "name": "Minimal Mockups", "description": "미니멀한 감성의 고퀄리티 무료 목업 모음 사이트. 스마트폰, 노트북, 포스터, 아이패드 등 최신 기기 목업을 PSD 파일로 무료 제공. 개인 및 상업적 용도로 자유롭게 사용 가능.", "pricing": "무료", "url": "https://www.minimalmockups.com" },
+        { "name": "Mr.Mockup", "description": "전문 디자이너를 위한 고퀄리티 PSD 목업 무료 다운로드 사이트. 의류, 포스터, 패키지, 간판, 명함 등 다양한 카테고리의 목업을 무료로 제공. 개인 및 상업적 용도 모두 사용 가능.", "pricing": "무료", "url": "https://mrmockup.com/free-mockups" }
       ]
     },
     {
@@ -223,7 +229,9 @@
         { "name": "Convertio", "description": "300개 이상의 파일 형식 변환을 지원하는 온라인 변환 툴. 문서, 이미지, 영상, 오디오, 전자책 등 거의 모든 파일 변환 가능. Google Drive, Dropbox와 연동해 클라우드 파일도 바로 변환 가능.", "pricing": "부분무료", "url": "https://convertio.co" },
         { "name": "HandBrake", "description": "무료 오픈소스 영상 변환 프로그램. MP4, MKV, AVI 등 영상 형식을 자유롭게 변환하고 용량을 크게 줄일 수 있다. 하드웨어 가속을 지원해 빠른 변환이 가능하며 유튜브 업로드용 영상 압축에 많이 사용.", "pricing": "무료", "url": "https://handbrake.fr" },
         { "name": "FFmpeg", "description": "오디오·영상 변환·편집의 최강 오픈소스 툴. 커맨드라인 기반이라 초보자에게 어렵지만 지원하는 형식과 기능이 타의 추종을 불허한다. 다른 영상 편집 소프트웨어의 근간이 되는 기술이며 무료로 무제한 사용 가능.", "pricing": "무료", "url": "https://ffmpeg.org" },
-        { "name": "Pandoc", "description": "문서 형식 변환의 만능 툴. Markdown, Word, HTML, PDF, LaTeX 등 수십 가지 문서 형식을 상호 변환 가능. 개발자와 연구자가 많이 쓰며 기술 문서나 논문 작업에서 형식 변환 자동화에 유용.", "pricing": "무료", "url": "https://pandoc.org" }
+        { "name": "Pandoc", "description": "문서 형식 변환의 만능 툴. Markdown, Word, HTML, PDF, LaTeX 등 수십 가지 문서 형식을 상호 변환 가능. 개발자와 연구자가 많이 쓰며 기술 문서나 논문 작업에서 형식 변환 자동화에 유용.", "pricing": "무료", "url": "https://pandoc.org" },
+        { "name": "PNG to SVG", "description": "PNG 이미지를 컬러 SVG 벡터 파일로 변환해주는 무료 온라인 툴. 대부분의 온라인 변환 툴과 달리 컬러 SVG로 변환 가능한 것이 특징. 로고, 아이콘 등 이미지를 벡터화할 때 유용.", "pricing": "무료", "url": "https://pngtosvg.com" },
+        { "name": "FreeConvert PNG→SVG", "description": "PNG 이미지를 SVG 벡터 파일로 변환하는 온라인 변환 툴. 부드러움과 색상 수 조절 옵션 제공. Google Drive, Dropbox에서 직접 파일 불러오기 가능. 300개 이상의 파일 형식 변환을 지원하는 FreeConvert의 PNG→SVG 전용 기능.", "pricing": "부분무료", "url": "https://www.freeconvert.com/png-to-svg" }
       ]
     },
     {
@@ -315,7 +323,8 @@
         {"name": "GDWEB", "description": "국내 최대 웹디자인 레퍼런스 사이트. 한국 감성의 쇼핑몰, 기업 사이트, 랜딩페이지 디자인을 카테고리별로 탐색 가능. 상세페이지, 메인 배너, 이벤트 페이지 등 실제 한국 온라인 쇼핑몰 레퍼런스를 찾을 때 가장 먼저 가는 사이트.", "pricing": "무료", "url": "https://gdweb.co.kr"},
         {"name": "Awwwards", "description": "전 세계 최고 수준의 웹사이트를 선정하고 소개하는 디자인 어워드 사이트. 혁신적인 웹 디자인, 인터랙션, 애니메이션 레퍼런스의 보물창고. 트렌드를 앞서가는 최신 웹 디자인 흐름을 파악하고 싶을 때 필수 방문지.", "pricing": "무료", "url": "https://awwwards.com"},
         {"name": "Muzli", "description": "크롬 새 탭을 열 때마다 최신 디자인 트렌드를 보여주는 익스텐션. Dribbble, Behance, 디자인 블로그의 최신 작품을 자동으로 큐레이션해 매일 새로운 영감을 제공. 설치만 해두면 브라우저를 열 때마다 디자인 감각이 쌓인다.", "pricing": "무료", "url": "https://muz.li"},
-        {"name": "Designspiration", "description": "색상 기반으로 레퍼런스를 검색할 수 있는 독특한 디자인 영감 사이트. 원하는 색상 팔레트를 선택하면 그 색감의 디자인 작품들을 한눈에 탐색 가능. 컬러 기획이 필요할 때 특히 유용하며 그래픽·타이포그래피 레퍼런스가 풍부.", "pricing": "무료", "url": "https://designspiration.com"}
+        {"name": "Designspiration", "description": "색상 기반으로 레퍼런스를 검색할 수 있는 독특한 디자인 영감 사이트. 원하는 색상 팔레트를 선택하면 그 색감의 디자인 작품들을 한눈에 탐색 가능. 컬러 기획이 필요할 때 특히 유용하며 그래픽·타이포그래피 레퍼런스가 풍부.", "pricing": "무료", "url": "https://designspiration.com"},
+        {"name": "Fruited Design", "description": "한국에서 만든 무료 목업 및 디자인 리소스 플랫폼. 8K 고해상도 목업을 무료로 다운로드 가능하며 포스터, 프레임, 패키지 등 다양한 목업을 제공. 포트폴리오를 더욱 퀄리티 있게 꾸미고 싶은 디자이너에게 필수 북마크.", "pricing": "무료", "url": "https://fruited-design.kr"}
       ]
     }
   ]
