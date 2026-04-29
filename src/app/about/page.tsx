@@ -35,6 +35,17 @@ export default function AboutPage() {
                   <p className="text-gray-900 font-medium">새로운 툴이 계속 추가되고 있으니 북마크 해두고 매일 확인하세요. 😊</p>
                 </div>
 
+                <div className="pt-8 border-t border-gray-100">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">이런 분께 추천합니다</h3>
+                  <ul className="list-disc list-inside space-y-2 ml-2">
+                    <li>AI 툴이 너무 많아서 뭘 써야 할지 모르겠는 분</li>
+                    <li>무료로 쓸 수 있는 툴을 찾고 계신 분</li>
+                    <li>디자인, 영상, 마케팅 업무에 AI를 도입하고 싶은 분</li>
+                    <li>매일 최신 AI 트렌드를 빠르게 파악하고 싶은 분</li>
+                    <li>툴은 많이 알고 있지만 제대로 정리가 안 된 분</li>
+                  </ul>
+                </div>
+
                 <div className="pt-12 border-t border-gray-100 mt-12 text-sm text-gray-500">
                   <h4 className="font-bold text-gray-700 mb-2">면책 고지</h4>
                   <p>본 사이트는 정보 제공을 목적으로 하며, 각 툴의 가격·정책·기능은 운영사 사정에 따라 언제든지 변경될 수 있습니다.</p>
@@ -43,7 +54,8 @@ export default function AboutPage() {
 
                 <div className="pt-6 border-t border-gray-100">
                   <h4 className="font-bold text-gray-700 mb-2">문의</h4>
-                  <p>오류 제보 및 피드백 → <a href="mailto:cocori7654@gmail.com" className="text-blue-600 hover:underline">cocori7654@gmail.com</a></p>
+                  <p>오류 제보 및 툴 추가 요청, 피드백은 아래 이메일로 보내주세요.</p>
+                  <p>📧 <a href="mailto:cocori7654@gmail.com" className="text-blue-600 hover:underline">cocori7654@gmail.com</a></p>
                 </div>
               </div>
             </section>
