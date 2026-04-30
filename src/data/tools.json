@@ -829,7 +829,8 @@
           "pricing": "부분무료",
           "url": "https://canva.com",
           "keywords": [
-            "캔바"
+            "캔바",
+            "SNS디자인"
           ]
         },
         {
@@ -973,7 +974,8 @@
           "pricing": "무료",
           "url": "https://fonts.google.com",
           "keywords": [
-            "google fonts"
+            "구글폰트",
+            "무료폰트"
           ]
         },
         {
@@ -982,7 +984,8 @@
           "pricing": "무료",
           "url": "https://hangeul.naver.com/font",
           "keywords": [
-            "naver 나눔글꼴"
+            "네이버폰트",
+            "나눔폰트"
           ]
         },
         {
@@ -1000,7 +1003,7 @@
           "pricing": "유료",
           "url": "https://fonts.adobe.com",
           "keywords": [
-            "adobe fonts"
+            "어도비폰트"
           ]
         },
         {
@@ -1009,7 +1012,7 @@
           "pricing": "무료",
           "url": "https://dafont.com",
           "keywords": [
-            "dafont"
+            "다폰트"
           ]
         },
         {
@@ -1018,7 +1021,7 @@
           "pricing": "무료",
           "url": "https://fontshare.com",
           "keywords": [
-            "fontshare"
+            "폰트쉐어"
           ]
         },
         {
@@ -1051,7 +1054,8 @@
           "pricing": "부분무료",
           "url": "https://canva.com",
           "keywords": [
-            "캔바"
+            "캔바",
+            "SNS디자인"
           ]
         },
         {
@@ -1170,7 +1174,8 @@
           "pricing": "무료",
           "url": "https://unsplash.com",
           "keywords": [
-            "unsplash"
+            "언스플래시",
+            "무료이미지"
           ]
         },
         {
@@ -1179,7 +1184,9 @@
           "pricing": "무료",
           "url": "https://pexels.com",
           "keywords": [
-            "pexels"
+            "펙셀스",
+            "픽셀스",
+            "무료사진"
           ]
         },
         {
@@ -1188,7 +1195,8 @@
           "pricing": "부분무료",
           "url": "https://freepik.com",
           "keywords": [
-            "freepik"
+            "프리픽",
+            "무료벡터"
           ]
         },
         {
@@ -1197,7 +1205,8 @@
           "pricing": "부분무료",
           "url": "https://flaticon.com",
           "keywords": [
-            "flaticon"
+            "플래티콘",
+            "무료아이콘"
           ]
         },
         {
@@ -1206,7 +1215,7 @@
           "pricing": "무료",
           "url": "https://pixabay.com",
           "keywords": [
-            "pixabay"
+            "픽사베이"
           ]
         },
         {
@@ -1283,7 +1292,8 @@
           "pricing": "부분무료",
           "url": "https://buffer.com",
           "keywords": [
-            "buffer"
+            "버퍼",
+            "SNS관리"
           ]
         },
         {
@@ -1292,7 +1302,7 @@
           "pricing": "유료",
           "url": "https://hootsuite.com",
           "keywords": [
-            "hootsuite"
+            "훗스위트"
           ]
         },
         {
@@ -1301,7 +1311,8 @@
           "pricing": "부분무료",
           "url": "https://later.com",
           "keywords": [
-            "later"
+            "레이터",
+            "인스타그램예약"
           ]
         },
         {
@@ -1310,7 +1321,8 @@
           "pricing": "부분무료",
           "url": "https://metricool.com",
           "keywords": [
-            "metricool"
+            "메트릭쿨",
+            "SNS분석"
           ]
         },
         {
@@ -1319,7 +1331,8 @@
           "pricing": "부분무료",
           "url": "https://canva.com",
           "keywords": [
-            "캔바"
+            "캔바",
+            "SNS디자인"
           ]
         },
         {
@@ -1328,7 +1341,7 @@
           "pricing": "부분무료",
           "url": "https://notion.so",
           "keywords": [
-            "notion"
+            "노션"
           ]
         },
         {
@@ -1351,7 +1364,7 @@
           "pricing": "부분무료",
           "url": "https://notion.so",
           "keywords": [
-            "notion"
+            "노션"
           ]
         },
         {
@@ -1360,7 +1373,7 @@
           "pricing": "부분무료",
           "url": "https://obsidian.md",
           "keywords": [
-            "obsidian"
+            "옵시디언"
           ]
         },
         {
@@ -1369,7 +1382,7 @@
           "pricing": "부분무료",
           "url": "https://todoist.com",
           "keywords": [
-            "todoist"
+            "투두이스트"
           ]
         },
         {
@@ -1378,7 +1391,7 @@
           "pricing": "부분무료",
           "url": "https://slack.com",
           "keywords": [
-            "slack"
+            "슬랙"
           ]
         },
         {
@@ -1396,7 +1409,7 @@
           "pricing": "부분무료",
           "url": "https://trello.com",
           "keywords": [
-            "trello"
+            "트렐로"
           ]
         },
         {
@@ -1437,7 +1450,8 @@
           "pricing": "부분무료",
           "url": "https://vercel.com",
           "keywords": [
-            "vercel"
+            "버셀",
+            "버슬"
           ]
         },
         {
@@ -1446,7 +1460,8 @@
           "pricing": "부분무료",
           "url": "https://pages.cloudflare.com",
           "keywords": [
-            "cloudflare pages"
+            "클라우드플레어",
+            "클플"
           ]
         },
         {
@@ -1455,7 +1470,8 @@
           "pricing": "부분무료",
           "url": "https://netlify.com",
           "keywords": [
-            "netlify"
+            "넷리파이",
+            "넷틀리파이"
           ]
         },
         {
@@ -1464,7 +1480,8 @@
           "pricing": "무료",
           "url": "https://pages.github.com",
           "keywords": [
-            "github pages"
+            "깃허브페이지",
+            "깃헙"
           ]
         },
         {
@@ -1473,7 +1490,7 @@
           "pricing": "부분무료",
           "url": "https://supabase.com",
           "keywords": [
-            "supabase"
+            "수파베이스"
           ]
         },
         {
@@ -1482,7 +1499,8 @@
           "pricing": "부분무료",
           "url": "https://firebase.google.com",
           "keywords": [
-            "firebase"
+            "파이어베이스",
+            "구글파이어베이스"
           ]
         },
         {
@@ -1491,7 +1509,7 @@
           "pricing": "부분무료",
           "url": "https://railway.app",
           "keywords": [
-            "railway"
+            "레일웨이"
           ]
         },
         {
@@ -1500,7 +1518,7 @@
           "pricing": "부분무료",
           "url": "https://render.com",
           "keywords": [
-            "render"
+            "렌더"
           ]
         }
       ]
@@ -1514,7 +1532,9 @@
           "pricing": "부분무료",
           "url": "https://ilovepdf.com",
           "keywords": [
-            "ilovepdf"
+            "아이러브PDF",
+            "PDF변환",
+            "피디에프"
           ]
         },
         {
@@ -1523,7 +1543,8 @@
           "pricing": "부분무료",
           "url": "https://smallpdf.com",
           "keywords": [
-            "smallpdf"
+            "스몰PDF",
+            "스몰피디에프"
           ]
         },
         {
@@ -1532,7 +1553,8 @@
           "pricing": "부분무료",
           "url": "https://cloudconvert.com",
           "keywords": [
-            "cloudconvert"
+            "클라우드컨버트",
+            "파일변환"
           ]
         },
         {
@@ -1551,7 +1573,7 @@
           "pricing": "부분무료",
           "url": "https://convertio.co",
           "keywords": [
-            "convertio"
+            "컨버티오"
           ]
         },
         {
@@ -1560,7 +1582,8 @@
           "pricing": "무료",
           "url": "https://handbrake.fr",
           "keywords": [
-            "handbrake"
+            "핸드브레이크",
+            "영상변환"
           ]
         },
         {
@@ -1569,6 +1592,7 @@
           "pricing": "무료",
           "url": "https://ffmpeg.org",
           "keywords": [
+            "에프에프엠펙",
             "ffmpeg"
           ]
         },
@@ -1578,7 +1602,8 @@
           "pricing": "무료",
           "url": "https://pandoc.org",
           "keywords": [
-            "pandoc"
+            "판독",
+            "문서변환"
           ]
         },
         {
@@ -1619,7 +1644,7 @@
           "pricing": "부분무료",
           "url": "https://inflearn.com",
           "keywords": [
-            "inflearn"
+            "인프런"
           ]
         },
         {
@@ -1754,7 +1779,8 @@
           "pricing": "무료",
           "url": "https://khanacademy.org",
           "keywords": [
-            "khan academy"
+            "칸아카데미",
+            "칸 아카데미"
           ]
         },
         {
@@ -1763,7 +1789,8 @@
           "pricing": "부분무료",
           "url": "https://coursera.org",
           "keywords": [
-            "coursera"
+            "코세라",
+            "온라인강의"
           ]
         },
         {
@@ -1772,7 +1799,7 @@
           "pricing": "부분무료",
           "url": "https://edx.org",
           "keywords": [
-            "edx"
+            "에덱스"
           ]
         },
         {
@@ -1781,7 +1808,7 @@
           "pricing": "부분무료",
           "url": "https://udemy.com",
           "keywords": [
-            "udemy"
+            "유데미"
           ]
         },
         {
@@ -1790,7 +1817,8 @@
           "pricing": "무료",
           "url": "https://w3schools.com",
           "keywords": [
-            "w3schools"
+            "W3스쿨",
+            "더블유쓰리스쿨"
           ]
         }
       ]
@@ -1923,7 +1951,8 @@
           "pricing": "부분무료",
           "url": "https://canva.com",
           "keywords": [
-            "캔바"
+            "캔바",
+            "SNS디자인"
           ]
         },
         {
@@ -2070,7 +2099,8 @@
           "pricing": "부분무료",
           "url": "https://otter.ai",
           "keywords": [
-            "otter.ai"
+            "오터AI",
+            "회의록자동화"
           ]
         },
         {
@@ -2079,7 +2109,8 @@
           "pricing": "부분무료",
           "url": "https://fireflies.ai",
           "keywords": [
-            "fireflies.ai"
+            "파이어플라이AI",
+            "회의요약"
           ]
         },
         {
@@ -2088,7 +2119,8 @@
           "pricing": "부분무료",
           "url": "https://tldv.io",
           "keywords": [
-            "tl;dv"
+            "틸디브이",
+            "회의녹화"
           ]
         },
         {
@@ -2115,7 +2147,8 @@
           "pricing": "부분무료",
           "url": "https://fathom.video",
           "keywords": [
-            "fathom"
+            "패덤",
+            "줌AI"
           ]
         }
       ]
@@ -2129,7 +2162,7 @@
           "pricing": "무료",
           "url": "https://pinterest.com",
           "keywords": [
-            "pinterest"
+            "핀터레스트"
           ]
         },
         {
@@ -2138,7 +2171,7 @@
           "pricing": "무료",
           "url": "https://behance.net",
           "keywords": [
-            "behance"
+            "비핸스"
           ]
         },
         {
@@ -2147,7 +2180,7 @@
           "pricing": "부분무료",
           "url": "https://dribbble.com",
           "keywords": [
-            "dribbble"
+            "드리블"
           ]
         },
         {
@@ -2156,7 +2189,8 @@
           "pricing": "부분무료",
           "url": "https://mobbin.com",
           "keywords": [
-            "mobbin"
+            "모빈",
+            "앱디자인레퍼런스"
           ]
         },
         {
@@ -2174,7 +2208,8 @@
           "pricing": "무료",
           "url": "https://awwwards.com",
           "keywords": [
-            "awwwards"
+            "어워즈",
+            "웹디자인레퍼런스"
           ]
         },
         {
