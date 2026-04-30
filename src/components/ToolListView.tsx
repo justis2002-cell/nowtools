@@ -8,15 +8,18 @@ import CategoryFilter from "@/components/CategoryFilter";
 import ToolGrid from "@/components/ToolGrid";
 import ToolDetailModal from "@/components/ToolDetailModal";
 import { mockTools } from "@/data/mockTools";
-import { Search } from "lucide-react";
+import { Search, ArrowRight } from "lucide-react";
 import { Category, Tool } from "@/types/tool";
+import Link from "next/link";
+import { BlogPost } from "@/lib/blog";
 
 interface ToolListViewProps {
   initialCategory?: Category;
   hideHero?: boolean;
+  allPosts?: BlogPost[];
 }
 
-export default function ToolListView({ initialCategory = "all", hideHero = false }: ToolListViewProps) {
+export default function ToolListView({ initialCategory = "all", hideHero = false, allPosts = [] }: ToolListViewProps) {
   const pathname = usePathname();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
@@ -40,12 +43,83 @@ export default function ToolListView({ initialCategory = "all", hideHero = false
     });
   }, [activeCategory, searchTerm]);
 
+  const newsPosts = useMemo(() => allPosts.filter(p => p.category === 'news').slice(0, 3), [allPosts]);
+  const toolPosts = useMemo(() => allPosts.filter(p => p.category === 'tools').slice(0, 3), [allPosts]);
+
   return (
     <div className="min-h-screen pb-20">
       <Navbar />
       
       <main>
         {!hideHero && <Hero />}
+        
+        {!hideHero && allPosts.length > 0 && (
+          <div className="container mx-auto px-4 -mt-24 mb-20 relative z-10">
+            <div className="space-y-16">
+              {/* AI 뉴스 섹션 */}
+              <div>
+                <div className="flex items-center justify-between mb-8">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white flex items-center">
+                    <span className="w-2 h-8 bg-blue-500 rounded-full mr-3"></span>
+                    최신 AI 뉴스
+                  </h2>
+                  <Link href="/blog/news" className="text-slate-400 hover:text-white transition-colors text-sm font-medium flex items-center">
+                    더보기 <ArrowRight className="w-4 h-4 ml-1" />
+                  </Link>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {newsPosts.map((post) => (
+                    <Link key={post.slug} href={`/blog/post/${post.slug}`} className="group">
+                      <div className="glass p-6 rounded-3xl hover-glow h-full flex flex-col transition-all">
+                        <p className="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-3">AI NEWS</p>
+                        <h3 className="text-lg font-bold text-white mb-4 group-hover:text-blue-400 transition-colors line-clamp-2 leading-snug">
+                          {post.title}
+                        </h3>
+                        <div className="mt-auto flex items-center justify-between pt-4 border-t border-white/5">
+                          <p className="text-slate-500 text-xs">{post.date}</p>
+                          <span className="text-accent text-xs font-bold flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            읽어보기 <ArrowRight className="w-3 h-3 ml-1" />
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* AI 툴 섹션 */}
+              <div>
+                <div className="flex items-center justify-between mb-8">
+                  <h2 className="text-2xl md:text-3xl font-bold text-white flex items-center">
+                    <span className="w-2 h-8 bg-purple-500 rounded-full mr-3"></span>
+                    오늘의 AI 툴 소식
+                  </h2>
+                  <Link href="/blog/tools" className="text-slate-400 hover:text-white transition-colors text-sm font-medium flex items-center">
+                    더보기 <ArrowRight className="w-4 h-4 ml-1" />
+                  </Link>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {toolPosts.map((post) => (
+                    <Link key={post.slug} href={`/blog/post/${post.slug}`} className="group">
+                      <div className="glass p-6 rounded-3xl hover-glow h-full flex flex-col transition-all">
+                        <p className="text-purple-400 text-[10px] font-bold uppercase tracking-widest mb-3">AI TOOLS</p>
+                        <h3 className="text-lg font-bold text-white mb-4 group-hover:text-purple-400 transition-colors line-clamp-2 leading-snug">
+                          {post.title}
+                        </h3>
+                        <div className="mt-auto flex items-center justify-between pt-4 border-t border-white/5">
+                          <p className="text-slate-500 text-xs">{post.date}</p>
+                          <span className="text-accent text-xs font-bold flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            읽어보기 <ArrowRight className="w-3 h-3 ml-1" />
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
         
         <div className="container mx-auto px-4 mt-12 mb-12">
           <div className="max-w-2xl mx-auto">
