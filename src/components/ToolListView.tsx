@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -23,6 +23,8 @@ export default function ToolListView({ initialCategory = "all", hideHero = false
   const pathname = usePathname();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 50;
 
   // 현재 URL 경로에서 카테고리 정보를 직접 추출하여 가장 정확한 상태를 유지합니다.
   const activeCategory = useMemo(() => {
@@ -32,6 +34,11 @@ export default function ToolListView({ initialCategory = "all", hideHero = false
     }
     return initialCategory;
   }, [pathname, initialCategory]);
+
+  // 카테고리나 검색어가 바뀌면 페이지를 1로 리셋
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [activeCategory, searchTerm]);
 
   const filteredTools = useMemo(() => {
     return mockTools.filter((tool) => {
@@ -46,6 +53,15 @@ export default function ToolListView({ initialCategory = "all", hideHero = false
 
   const newsPosts = useMemo(() => allPosts.filter(p => p.category === 'news').slice(0, 3), [allPosts]);
   const toolPosts = useMemo(() => allPosts.filter(p => p.category === 'tools').slice(0, 3), [allPosts]);
+
+  const totalPages = Math.ceil(filteredTools.length / itemsPerPage);
+
+  const displayedTools = useMemo(() => {
+    if (activeCategory !== "all") return filteredTools;
+    
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    return filteredTools.slice(startIndex, startIndex + itemsPerPage);
+  }, [filteredTools, activeCategory, currentPage]);
 
   return (
     <div className="min-h-screen pb-20">
@@ -141,9 +157,31 @@ export default function ToolListView({ initialCategory = "all", hideHero = false
         />
         
         <ToolGrid 
-          tools={filteredTools} 
+          tools={displayedTools} 
           onToolClick={setSelectedTool} 
         />
+
+        {/* 전체 카테고리에서만 페이지네이션 표시 */}
+        {activeCategory === "all" && totalPages > 1 && (
+          <div className="container mx-auto px-4 mt-16 flex justify-center items-center gap-3">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+              <button
+                key={pageNum}
+                onClick={() => {
+                  setCurrentPage(pageNum);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className={`w-10 h-10 rounded-xl font-bold transition-all ${
+                  currentPage === pageNum 
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30" 
+                    : "bg-slate-900 text-slate-500 border border-slate-800 hover:border-slate-700 hover:text-white"
+                }`}
+              >
+                {pageNum}
+              </button>
+            ))}
+          </div>
+        )}
       </main>
 
       <ToolDetailModal 
