@@ -54,7 +54,7 @@ export default function ToolListView({ initialCategory = "all", hideHero = false
         {!hideHero && <Hero />}
         
         {!hideHero && allPosts.length > 0 && (
-          <div className="container mx-auto px-4 -mt-24 mb-20 relative z-10">
+          <div className="container mx-auto px-4 mt-12 mb-20 relative z-10">
             <div className="space-y-16">
               {/* AI 뉴스 섹션 */}
               <div>
