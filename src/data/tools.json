@@ -160,7 +160,11 @@
         {"name": "Squoosh", "description": "구글이 만든 무료 이미지 압축 툴. 브라우저에서 바로 실행되며 JPEG, PNG, WebP, AVIF 등 다양한 형식으로 변환 가능. 화질 손상 없이 파일 용량을 최대 90%까지 줄여 웹 최적화에 필수.", "pricing": "무료", "url": "https://squoosh.app"},
         {"name": "Upscale.media", "description": "AI로 이미지 해상도를 높이는 업스케일링 툴. 저화질 이미지를 2배, 4배, 8배까지 선명하게 확대 가능. 오래된 사진 복원, 작은 로고 확대, 인쇄용 이미지 해상도 향상에 유용.", "pricing": "부분무료", "url": "https://upscale.media"},
         {"name": "Vectorizer.ai", "description": "래스터 이미지를 벡터로 자동 변환해주는 AI 툴. JPG, PNG를 SVG로 변환해 확대해도 깨지지 않는 벡터 파일 생성. 로고, 아이콘, 일러스트 작업에서 비트맵을 벡터로 전환할 때 가장 정밀한 결과물을 제공.", "pricing": "부분무료", "url": "https://vectorizer.ai"},
-        {"name": "Clipdrop", "description": "Stability AI가 만든 AI 이미지 편집 도구 모음. 배경 제거, 이미지 업스케일링, 오브젝트 제거, 조명 보정 등 다양한 AI 편집 기능을 한 곳에서 사용 가능. Photoshop 없이 고급 편집 가능.", "pricing": "부분무료", "url": "https://clipdrop.co"}
+        {"name": "Clipdrop", "description": "Stability AI가 만든 AI 이미지 편집 도구 모음. 배경 제거, 이미지 업스케일링, 오브젝트 제거, 조명 보정 등 다양한 AI 편집 기능을 한 곳에서 사용 가능. Photoshop 없이 고급 편집 가능.", "pricing": "부분무료", "url": "https://clipdrop.co"},
+        { "name": "image-upscaling.net", "description": "로그인, 워터마크, 구독 없이 완전 무료로 이미지를 최대 16K까지 업스케일할 수 있는 온라인 툴. 회원가입 없이 바로 사용 가능.", "pricing": "무료", "url": "https://image-upscaling.net" },
+        { "name": "Upsampler", "description": "로그인과 워터마크 없이 이미지를 4K로 업스케일해주는 무료 온라인 툴. 빠르고 간단하게 이미지 해상도를 높일 수 있다.", "pricing": "무료", "url": "https://upsampler.com" },
+        { "name": "Waifu2x", "description": "일러스트와 애니메이션 이미지 업스케일에 특화된 완전 무료 온라인 툴. 노이즈 제거 기능도 함께 제공하며 설치 없이 브라우저에서 바로 사용 가능.", "pricing": "무료", "url": "https://waifu2x.udp.jp" },
+        { "name": "iLoveIMG", "description": "이미지 압축, 자르기, 크기 조절, 업스케일, 배경 제거, 워터마크 추가 등 20가지 이상의 이미지 편집 기능을 무료로 제공하는 온라인 툴. 회원가입 없이 바로 사용 가능하며 한국어 지원.", "pricing": "부분무료", "url": "https://www.iloveimg.com/ko" }
       ]
     },
     {
