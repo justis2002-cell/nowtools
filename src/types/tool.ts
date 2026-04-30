@@ -32,4 +32,5 @@ export interface Tool {
   badge: Badge;
   link: string;
   logo: string;
+  keywords?: string[];
 }

@@ -38,7 +38,8 @@ export default function ToolListView({ initialCategory = "all", hideHero = false
       const matchesCategory = activeCategory === "all" || tool.category === activeCategory;
       const matchesSearch = 
         tool.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-        tool.description.toLowerCase().includes(searchTerm.toLowerCase());
+        tool.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (tool.keywords && tool.keywords.some(k => k.toLowerCase().includes(searchTerm.toLowerCase())));
       return matchesCategory && matchesSearch;
     });
   }, [activeCategory, searchTerm]);

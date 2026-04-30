@@ -43,6 +43,7 @@ export const mockTools: Tool[] = toolsJson.categories.flatMap((catGroup) => {
     description: tool.description,
     badge: badgeMap[tool.pricing] || "freemium",
     link: tool.url,
-    logo: `https://www.google.com/s2/favicons?domain=${new URL(tool.url).hostname}&sz=128`
+    logo: `https://www.google.com/s2/favicons?domain=${new URL(tool.url).hostname}&sz=128`,
+    keywords: tool.keywords
   }));
 });
