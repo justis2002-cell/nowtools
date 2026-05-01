@@ -223,7 +223,7 @@
           "name": "Stable Diffusion",
           "description": "완전 무료 오픈소스 AI 이미지 생성기. 로컬 PC에 설치해 무제한으로 이미지를 만들 수 있다. 단, 설치 과정이 복잡하고 GPU가 없으면 속도가 느려 초보자보다는 고급 사용자에게 적합.",
           "pricing": "무료",
-          "url": "https://stability.ai",
+          "url": "https://github.com/LykosAI/StabilityMatrix",
           "keywords": [
             "스테이블디퓨전",
             "스테이블 디퓨전"
