@@ -747,8 +747,8 @@
         },
         {
           "name": "Trae",
-          "description": "바이트댄스(틱톡 모회사)가 만든 AI 코딩 에디터. Cursor와 유사한 기능을 완전 무료로 제공해 출시 직후 개발자들 사이에서 폭발적인 관심을 받았다. Claude, GPT-4o 등 다양한 AI 모델을 무료로 사용할 수 있는 게 최대 강점.",
-          "pricing": "무료",
+          "description": "바이트댄스(틱톡 모회사)가 만든 AI 코딩 에디터. Cursor와 유사한 기능을 제공하며 출시 직후 개발자들 사이에서 폭발적인 관심을 받았다. 무료 플랜 제공, Claude·GPT-4o 등 AI 모델 사용 가능하며 유료 플랜 업그레이드 시 더 많은 토큰 사용 가능.",
+          "pricing": "부분무료",
           "url": "https://trae.ai",
           "keywords": [
             "trae"
