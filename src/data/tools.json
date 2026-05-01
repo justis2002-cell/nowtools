@@ -302,6 +302,15 @@
           "keywords": [
             "flair ai"
           ]
+        },
+        {
+          "name": "Dreamina",
+          "description": "CapCut이 만든 AI 이미지·영상 생성 올인원 툴. 매일 120크레딧 무료 충전되며 이미지 생성, 영상 생성, 포스터, 로고 제작 가능. 한글 프롬프트 지원.",
+          "pricing": "부분무료",
+          "url": "https://dreamina.capcut.com",
+          "keywords": [
+            "dreamina"
+          ]
         }
       ]
     },
@@ -425,6 +434,24 @@
           "url": "https://lumalabs.ai",
           "keywords": [
             "luma dream machine"
+          ]
+        },
+        {
+          "name": "Dreamina",
+          "description": "CapCut이 만든 AI 이미지·영상 생성 올인원 툴. 매일 120크레딧 무료 충전되며 이미지 생성, 영상 생성, 포스터, 로고 제작 가능. 한글 프롬프트 지원.",
+          "pricing": "부분무료",
+          "url": "https://dreamina.capcut.com",
+          "keywords": [
+            "dreamina"
+          ]
+        },
+        {
+          "name": "Bing Video Creator",
+          "description": "마이크로소프트가 만든 AI 영상 생성 툴. 텍스트 프롬프트로 영상 생성 가능하며 매일 크레딧 충전됨. Microsoft 계정 필요.",
+          "pricing": "부분무료",
+          "url": "https://www.bing.com/images/create/ai-video-generator",
+          "keywords": [
+            "bing video creator"
           ]
         }
       ]
@@ -1098,7 +1125,7 @@
         },
         {
           "name": "Upscale.media",
-          "description": "AI로 이미지 해상도를 높이는 업스케일링 툴. 저화질 이미지를 2배, 4배, 8배까지 선명하게 확대 가능. 오래된 사진 복원, 작은 로고 확대, 인쇄용 이미지 해상도 향상에 유용.",
+          "description": "AI 이미지 업스케일링 툴. 로그인 없이 2배 업스케일 무료 제공. 4배·8배는 유료. 오래된 사진 복원, 로고 확대, 인쇄용 이미지 해상도 향상에 유용.",
           "pricing": "부분무료",
           "url": "https://upscale.media",
           "keywords": [
@@ -1127,22 +1154,14 @@
         },
         {
           "name": "image-upscaling.net",
-          "description": "로그인, 워터마크, 구독 없이 완전 무료로 이미지를 최대 16K까지 업스케일할 수 있는 온라인 툴. 회원가입 없이 바로 사용 가능.",
+          "description": "로그인, 워터마크, 구독 없이 완전 무료로 이미지를 2배 업스케일할 수 있는 온라인 툴. 결과물은 ZIP 파일로 다운로드되며 WebP 형식으로 저장됨. Squoosh로 JPG·PNG 변환 가능.",
           "pricing": "무료",
           "url": "https://image-upscaling.net",
           "keywords": [
             "image-upscaling.net"
           ]
         },
-        {
-          "name": "Upsampler",
-          "description": "로그인과 워터마크 없이 이미지를 4K로 업스케일해주는 무료 온라인 툴. 빠르고 간단하게 이미지 해상도를 높일 수 있다.",
-          "pricing": "무료",
-          "url": "https://upsampler.com",
-          "keywords": [
-            "upsampler"
-          ]
-        },
+
         {
           "name": "Waifu2x",
           "description": "일러스트와 애니메이션 이미지 업스케일에 특화된 완전 무료 온라인 툴. 노이즈 제거 기능도 함께 제공하며 설치 없이 브라우저에서 바로 사용 가능.",
@@ -1161,6 +1180,16 @@
           "keywords": [
             "아이러브이미지",
             "이미지편집"
+          ]
+        },
+        {
+          "name": "Waifu2x Unlimited",
+          "description": "Waifu2x의 용량 제한 없는 브라우저 버전. 일러스트·애니메이션 이미지 업스케일 특화. 완전 무료.",
+          "pricing": "무료",
+          "url": "https://unlimited.waifu2x.net",
+          "keywords": [
+            "waifu2x unlimited",
+            "와이푸2x"
           ]
         }
       ]
