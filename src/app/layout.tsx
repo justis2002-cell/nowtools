@@ -14,8 +14,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://nowtools.kr'),
   title: "nowtools.kr - AI/이미지/디자인 툴 디렉토리",
   description: "AI, 이미지, 디자인 관련 유용한 툴들을 한눈에 확인하고 비교해보세요. ChatGPT부터 미드저니까지 모든 AI 툴을 모았습니다.",
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: "nowtools.kr - AI/이미지/디자인 툴 디렉토리",
     description: "AI, 이미지, 디자인 관련 유용한 툴들을 한눈에 확인하고 비교해보세요. ChatGPT부터 미드저니까지 모든 AI 툴을 모았습니다.",

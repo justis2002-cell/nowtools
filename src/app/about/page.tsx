@@ -1,4 +1,13 @@
 import Navbar from "@/components/Navbar";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "nowtools.kr 소개 - AI 툴 디렉토리",
+  description: "나우툴즈는 매일 쏟아지는 수많은 AI 툴 중 진짜 쓸만한 것들만 엄선해 제공하는 AI 도구 전문 디렉토리입니다.",
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 export default function AboutPage() {
   return (

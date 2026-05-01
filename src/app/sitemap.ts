@@ -1,6 +1,7 @@
 export const dynamic = "force-static";
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog';
+import { getDynamicCategories } from '@/lib/category-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://nowtools.kr';
@@ -30,6 +31,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
+  // 도구 카테고리 페이지
+  const categories = getDynamicCategories();
+  const categoryUrls = categories
+    .filter(cat => cat.id !== 'all')
+    .map((cat) => ({
+      url: `${baseUrl}/category/${cat.id}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }));
+
   // 기본 페이지들
   const routes = ['', '/blog', '/blog/news', '/blog/tools', '/about', '/privacy', '/terms'].map(
     (route) => ({
@@ -40,5 +52,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  return [...routes, ...postUrls];
+  return [...routes, ...categoryUrls, ...postUrls];
 }

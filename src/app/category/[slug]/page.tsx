@@ -1,6 +1,20 @@
 import ToolListView from "@/components/ToolListView";
 import { getDynamicCategories } from "@/lib/category-data";
 import { Category } from "@/types/tool";
+import type { Metadata } from 'next';
+import { getCategoryLabel } from "@/lib/category-data";
+
+export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const label = getCategoryLabel(slug);
+  
+  return {
+    title: `${label} 관련 AI 툴 모음 - nowtools.kr`,
+    alternates: {
+      canonical: `/category/${slug}`,
+    },
+  };
+}
 
 interface CategoryPageProps {
   params: Promise<{

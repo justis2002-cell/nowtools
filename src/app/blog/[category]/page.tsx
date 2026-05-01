@@ -1,12 +1,25 @@
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/blog';
 import Navbar from '@/components/Navbar';
+import type { Metadata } from 'next';
 
 export function generateStaticParams() {
   return [
     { category: 'tools' },
     { category: 'news' }
   ];
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { category } = await params;
+  const title = category === 'news' ? 'AI 뉴스' : 'AI 툴 소개';
+  
+  return {
+    title: `${title} - nowtools.kr`,
+    alternates: {
+      canonical: `/blog/${category}`,
+    },
+  };
 }
 
 interface Props {

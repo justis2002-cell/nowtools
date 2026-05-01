@@ -1,6 +1,15 @@
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/blog';
 import Navbar from '@/components/Navbar';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "AI 트렌드 & 뉴스 - nowtools.kr",
+  description: "나우툴즈에서 제공하는 모든 AI 도구와 최신 뉴스를 한눈에 확인하세요.",
+  alternates: {
+    canonical: "/blog",
+  },
+};
 
 export default function BlogListPage() {
   const posts = getAllPosts();

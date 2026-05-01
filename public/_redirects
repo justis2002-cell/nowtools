@@ -1,0 +1,4 @@
+/blog/news/:slug /blog/post/:slug 301
+/blog/tools/:slug /blog/post/:slug 301
+/blog/category/:slug /blog/post/:slug 301
+/blog/post/:slug/ /blog/post/:slug 301

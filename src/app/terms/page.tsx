@@ -1,4 +1,12 @@
 import Navbar from "@/components/Navbar";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "이용약관 - nowtools.kr",
+  alternates: {
+    canonical: "/terms",
+  },
+};
 
 export default function TermsPage() {
   return (

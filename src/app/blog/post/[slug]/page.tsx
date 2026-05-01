@@ -5,6 +5,8 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 
+import type { Metadata } from 'next';
+
 export function generateStaticParams() {
   const folders = ['news', 'tools'];
   let allFiles: string[] = [];
@@ -24,9 +26,30 @@ export function generateStaticParams() {
     }));
 }
 
-
 interface Props {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
+  
+  if (!post) return {};
+
+  return {
+    title: `${post.title} - nowtools.kr`,
+    description: post.excerpt || `${post.title}에 대한 상세 정보를 확인해보세요.`,
+    alternates: {
+      canonical: `/blog/post/${slug}`,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `https://nowtools.kr/blog/post/${slug}`,
+      type: 'article',
+      publishedTime: post.date,
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -44,8 +67,25 @@ export default async function BlogPostPage({ params }: Props) {
     );
   }
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    datePublished: post.date,
+    author: {
+      '@type': 'Organization',
+      name: 'nowtools.kr',
+    },
+    description: post.excerpt,
+    url: `https://nowtools.kr/blog/post/${slug}`,
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
       <main className="py-20 px-4">
         <article className="max-w-3xl mx-auto bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 animate-fade-in-up">
