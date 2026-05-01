@@ -1,4 +1,12 @@
+# 옛날 포스트 주소 리디렉션
 /blog/news/:slug /blog/post/:slug 301
 /blog/tools/:slug /blog/post/:slug 301
 /blog/category/:slug /blog/post/:slug 301
+
+# 트레일링 슬래시 제거 (Trailing Slash Removal)
+/blog/news/ /blog/news 301
+/blog/tools/ /blog/tools 301
 /blog/post/:slug/ /blog/post/:slug 301
+/about/ /about 301
+/privacy/ /privacy 301
+/terms/ /terms 301
