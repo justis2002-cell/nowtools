@@ -1,6 +1,6 @@
 ---
 title: "AI 영상 제작 및 데이터 리서치 도구 비교: Hera, Gemini, Tabstack 분석"
-description: "Hera Launch, Gemini Deep Research Agent, Tabstack 등 AI 기반의 영상 제작, 데이터 리서치, 웹 데이터 추출 도구들의 핵심 기능과 활용 사례를 정리했습니다. 도구별 특징과 사용 전 확인할 점을 함께 살펴봅니다."
+description: "AI 영상 제작 및 데이터 리서치 도구 비교 내용을 바탕으로 Hera Launch, Gemini, Tabstack의 핵심 기능을 정리했습니다. 도구별 특징과 업무 자동화 시 고려해야 할 기술적 기준 및 사용 전 확인할 점을 전문가의 관점에서 하나하나 짚어보며 상세히 살펴봅니다."
 date: "2026-05-01"
 category: "tools"
 ---
