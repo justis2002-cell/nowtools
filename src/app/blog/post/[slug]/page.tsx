@@ -110,6 +110,19 @@ export default async function BlogPostPage({ params }: Props) {
                 img: ({ ...props }) => (
                   <img {...props} className="rounded-2xl shadow-lg my-8" alt={props.alt || ''} />
                 ),
+                a: ({ href, children, ...props }) => {
+                  const isExternal = href?.startsWith('http');
+                  return (
+                    <a 
+                      href={href} 
+                      target={isExternal ? '_blank' : undefined} 
+                      rel={isExternal ? 'noopener noreferrer' : undefined}
+                      {...props}
+                    >
+                      {children}
+                    </a>
+                  );
+                },
               }}
             >
               {post.content}
