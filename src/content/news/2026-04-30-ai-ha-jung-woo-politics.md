@@ -19,7 +19,7 @@ category: "news"
 - **핵심 내용:** 윤송이 전 엔씨소프트 사장은 AI 기술이 고도화될수록 '가장 인간다운 인간'의 역량이 중요해질 것이라고 강조했습니다. 단순 반복 업무가 자동화되는 환경에서 비판적 사고, 창의성, 공감 능력이 차별화된 가치를 창출할 것임을 역설하며 교육 시스템의 변화 필요성을 시사했습니다.
 - **AI 시장에서의 의미:** 기술 개발뿐만 아니라 인문학적 소양과 문제 해결 능력을 갖춘 인재 육성이 미래 사회의 핵심 경쟁력이 될 것임을 보여줍니다.
 - **사용자가 확인할 점:** AI를 보조 도구로 활용하되, 기술이 대체하기 어려운 창의적 영역의 역량을 강화하는 자기계발 방향을 설정해야 합니다.
-- [기사 원문 보기](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtOU82Tlp2TWcyT1NqTEdMaDNFejNfWExkNkVOQjBXOVlrcE12Y1phTXczQ2E3NF9LbGNtVGxFekw5VGkyR0NvWThvLTdhQjN6T2syS0t3?oc=5)
+- [기사 원문 보기](https://zdnet.co.kr/view/?no=20260429111306)
 
 ### 2. AI 전문가의 정치권 진출과 국가 전략 수립 논의
 
@@ -27,9 +27,9 @@ category: "news"
 - **핵심 내용:** 하정우 전 네이버클라우드 AI 이노베이션 센터장이 국가 AI 경쟁력 강화를 기치로 정치권 진출을 공식화했습니다. 일각에서는 인재 유출에 대한 우려와 비판적인 시각이 존재하지만, 국회에서 'AI G3' 국가로 도약하기 위한 정책적 지원을 이어가겠다는 포부를 밝혔습니다.
 - **AI 시장에서의 의미:** AI 기술이 국가 안보와 경제의 핵심 요소가 되면서, 기술 이해도가 높은 전문가의 정책 결정 참여가 본격화되고 있음을 상징합니다.
 - **사용자가 확인할 점:** 기술 진흥과 규제 사이에서 균형 있는 정책이 마련되는지, 그리고 국가 차원의 AI 인프라 지원책이 어떻게 구체화되는지 주시할 필요가 있습니다.
-- [기사 원문 보기 1](https://news.google.com/rss/articles/CBMidkFVX3lxTE9wZ2VNY1h2WmZOV2E2bnV6cU04eU9mSTdyNXFlb0VqcHlZMnN1bENlb05YUklaeW85WlI3b3F1Q3FqZks5UURic2otY0w0VkZGaXZlcTFVY3JsVkdwQTBFU25yWGpmNnJPSVJydw4RYzRMNDFlYmpiYVHSAWZBVV95cUxPVWhHX1pmeGwzaWpWYndHWThCMGlNOUxFMFlJU1dCZkhTTlkxbHc1ME5hclpUenNvNkdVTzAzdzdOcVowek5Sc0loRnZwcnN6alR2RGJBNkFTUDFDSFdaNGdaQXRNcWc?oc=5)
-- [기사 원문 보기 2](https://news.google.com/rss/articles/CBMif0FVX3lxTE9JM3FMOXRWWU85Z0NJQk1SMHV4NHR0bThFNjlOUE80bXBsMndZbzhZdEdGT05FTi1WMDlnZG82M3RQSlFNclcwaE9La1gzaDFEVy0tUldvVzQxX2lmbHhlVkhIUkg4c19ydkxyMlZlS3p6RHRpUDdWMGtRNjNUNEE?oc=5)
-- [기사 원문 보기 3](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5DOVNZOFNlbktxYnFzOWI1RGFFMElWWEVrX1poOS0ySXY5aXd5amNnYVkwYWxXWFhUaGlaN0p4YmNUTWwyWlVBMkhhbEN5ZmRzRFBHQlVB?oc=5)
+- [기사 원문 보기 1](https://zdnet.co.kr/view/?no=20260429181156)
+- [기사 원문 보기 2](https://www.donga.com/news/Opinion/article/all/20260429/124701234/1)
+- [기사 원문 보기 3](https://zdnet.co.kr/view/?no=20260427143021)
 
 ### 3. 전통 산업의 디지털 전환: AI 자율주행 트랙터 시연
 
@@ -37,7 +37,7 @@ category: "news"
 - **핵심 내용:** 농기계 기업 대동이 선보인 AI 트랙터가 복잡한 밭고랑 주행과 코너링을 스스로 수행하며 농업 분야의 혁신 가능성을 입증했습니다. 자율주행 기술을 통해 인력 부족 문제를 해결하고 정밀 농업을 구현하는 단계에 도달했음을 보여주었습니다.
 - **AI 시장에서의 의미:** AI 기술이 비IT 산업군인 농업의 생산 구조를 근본적으로 변화시키고 있으며, 실질적인 수익 창출과 효율 증대로 이어지고 있음을 시사합니다.
 - **사용자가 확인할 점:** 자율주행 농기계의 보급 시기와 가격대, 그리고 축적된 농업 데이터를 활용한 2차 서비스(비료 살포 가이드 등)의 확장성을 검토해야 합니다.
-- [기사 원문 보기](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1maUN6YzZkWnlCcU9Oc0dnZEJndG5nNGJfX01hRS15MzRCVTEwY2dDWmV2dlkyUjdQWUxTZWxvNFM5UV9fQkpldU0xUFdrNmlJY242VnV3?oc=5)
+- [기사 원문 보기](https://zdnet.co.kr/view/?no=20260429103632)
 
 ## 결론
 
