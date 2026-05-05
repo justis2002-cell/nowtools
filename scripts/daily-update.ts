@@ -172,9 +172,28 @@ async function updateTools() {
     위 도구들을 소개하는 한국어 블로그 포스트를 마크다운 형식으로 작성해줘.
     분량은 공백 포함 최소 1,500자 이상의 매우 상세하고 풍성한 전문 칼럼 형식으로 작성해야 해.
 
-    포스트 최상단에 다음과 같은 형식의 Frontmatter를 포함해줘:
+    포스트 최상단에 다음 형식의 Frontmatter를 포함해줘.
+
+    [title 작성 규칙 - 매우 중요]
+    - "[오늘의 AI]" 같은 대괄호 태그 절대 금지
+    - "급상승 AI 툴 TOP 3 소개" 같은 정형 문구 절대 금지
+    - 소개하는 도구 3개의 핵심 기능이나 공통 테마를 분석해 사람들이 실제 검색할 키워드를 맨 앞에 배치
+    - 형식: "메인 키워드: 부가 설명" 또는 "메인 키워드 - 부가 설명"
+    - 좋은 예시:
+      · "AI 영상 제작 도구 - Runway, Pika, Sora 비교"
+      · "AI 코딩 어시스턴트 - 신규 출시 도구 3선"
+    - 나쁜 예시 (절대 쓰지 말 것):
+      · "[오늘의 AI] 2026-05-05 급상승 AI 툴 TOP 3 소개"
+      · "오늘 주목할 만한 AI 도구"
+
+    [description 작성 규칙 - 필수, 절대 생략 금지]
+    - title의 메인 키워드를 첫 문장에 띄어쓰기까지 동일하게 포함
+    - 공백 포함 150~170자
+    - 담백한 정보 전달형. "전문가 관점", "심도 있는", "획기적인" 같은 자칭/과장 표현 금지
+
     ---
-    title: "[오늘의 AI] ${date} 급상승 AI 툴 TOP 3 소개"
+    title: "(위 규칙대로 작성)"
+    description: "(위 규칙대로 작성)"
     date: "${date}"
     category: "tools"
     ---
@@ -201,7 +220,7 @@ async function updateTools() {
   `;
   const slug = (await callGemini(slugPrompt)).trim().toLowerCase().replace(/[^a-z0-9-]/g, '');
   
-  const footerText = "\n\n더 다양한 AI 도구와 디자인 툴은 nowtools.kr 메인에서 바로 확인하실 수 있습니다.";
+  const footerText = "\n\n더 다양한 AI 도구와 디자인 툴은 [nowtools.kr](https://nowtools.kr) 메인에서 바로 확인하실 수 있습니다.";
   const fileName = `${date}-${slug}.md`;
   const filePath = path.join(process.cwd(), 'src/content/tools', fileName);
   fs.writeFileSync(filePath, content + footerText, 'utf-8');
@@ -235,9 +254,29 @@ async function updateNews() {
     이 뉴스들을 요약 정리한 한국어 블로그 포스트를 마크다운 형식으로 작성해줘.
     분량은 공백 포함 최소 1,500자 이상의 매우 상세하고 깊이 있는 전문 브리핑 형식으로 작성해야 해.
 
-    포스트 최상단에 다음과 같은 형식의 Frontmatter를 포함해줘:
+    포스트 최상단에 다음 형식의 Frontmatter를 포함해줘.
+
+    [title 작성 규칙 - 매우 중요]
+    - "[AI 뉴스]" 같은 대괄호 태그 절대 금지
+    - "오늘의 AI 핵심 소식 브리핑" 같은 정형 문구 절대 금지
+    - 오늘 뉴스 5개의 공통 주제를 분석해, 사람들이 실제 검색할 키워드를 맨 앞에 배치
+    - 형식: "메인 키워드: 부가 설명" 또는 "메인 키워드 - 부가 설명"
+    - 좋은 예시:
+      · "AI 의료 진단 - 피부암 조기 발견 기술 동향"
+      · "생성형 AI 저작권 - 웹툰 IP 침해 소송 분석"
+      · "AI 일자리 변화 - 직무 분해 현상과 재교육 과제"
+    - 나쁜 예시 (절대 쓰지 말 것):
+      · "[AI 뉴스] 2026-05-05 오늘의 AI 핵심 소식 브리핑"
+      · "오늘의 AI 동향 정리"
+
+    [description 작성 규칙 - 필수, 절대 생략 금지]
+    - title의 메인 키워드를 첫 문장에 띄어쓰기까지 동일하게 포함
+    - 공백 포함 150~170자
+    - 담백한 정보 전달형. "전문가 관점", "심도 있는", "획기적인" 같은 자칭/과장 표현 금지
+
     ---
-    title: "[AI 뉴스] ${date} 오늘의 AI 핵심 소식 브리핑"
+    title: "(위 규칙대로 작성)"
+    description: "(위 규칙대로 작성)"
     date: "${date}"
     category: "news"
     ---
@@ -270,7 +309,7 @@ async function updateNews() {
   `;
   const slug = (await callGemini(slugPrompt)).trim().toLowerCase().replace(/[^a-z0-9-]/g, '');
 
-  const footerText = "\n\n더 다양한 AI 도구와 디자인 툴은 nowtools.kr 메인에서 바로 확인하실 수 있습니다.";
+  const footerText = "\n\n더 다양한 AI 도구와 디자인 툴은 [nowtools.kr](https://nowtools.kr) 메인에서 바로 확인하실 수 있습니다.";
   const fileName = `${date}-${slug}.md`;
   const filePath = path.join(process.cwd(), 'src/content/news', fileName);
   fs.writeFileSync(filePath, content + footerText, 'utf-8');

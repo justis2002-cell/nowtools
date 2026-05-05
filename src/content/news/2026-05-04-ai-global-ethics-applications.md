@@ -17,7 +17,7 @@ category: "news"
 *   **인사이트:** 리처드 도킨스와 같은 석학의 발언은 AI를 단순히 도구로만 바라보던 시각에 큰 변화를 가져올 수 있습니다. AI의 의식 가능성에 대한 논의는 향후 AI 연구의 방향성뿐만 아니라, AI 윤리, 법적 지위, 그리고 사회적 역할에 대한 대중적 인식과 정책 결정에 중대한 영향을 미칠 것입니다. 이는 기술 개발과 더불어 철학, 생물학, 심리학 등 다양한 학문 분야의 융합적 접근이 AI 시대의 필수 요소임을 강조하며, AI의 잠재적 능력과 한계에 대한 인류의 이해를 확장하는 계기가 될 것입니다.
 *   [기사 원문 보기](https://news.google.com/rss/articles/CBMigwFBVV95cUxQTE9QMlJqOEJ4QS1Jam85dDI3S2pvSTNGNDMtcjI1dzNaNWxOQXBjN3RBdmFYT2ViNmZEa0xvWVphTWZyaUdJQTdXYWgwaFAzbnVVdE9HaHNtaTV1OFl0Y2tGbDU1dTV1X19DY2o3c0VFQVY3QTN4OHQ2T1BfU3JlRm1Cdw?oc=5)
 
-<br>
+
 
 #### 2. 유럽 최대 AI 기업도 미국에 의존…'소버린 AI'는 가능한가 - 지디넷코리아
 
@@ -26,7 +26,7 @@ category: "news"
 *   **인사이트:** 이 기사는 글로벌 AI 패권 경쟁의 현실을 적나라하게 보여줍니다. 유럽의 사례는 국가 차원에서 AI 기술 주권을 확보하려는 노력이 얼마나 어려운지, 특히 기반 기술과 인프라의 종속성이 얼마나 큰 제약으로 작용하는지 드러냅니다. 이는 한국을 비롯한 다른 국가들에게도 시사하는 바가 큽니다. 자체적인 AI 역량 강화를 위한 장기적인 투자, 인력 양성, 그리고 핵심 기술 개발의 중요성이 더욱 강조되며, 기술 독립을 위한 국제 협력 및 전략적 제휴의 필요성도 부각될 것입니다. 단순히 AI 모델 개발을 넘어 인프라 전반의 독립성이 확보되어야 진정한 '소버린 AI'가 가능하다는 교훈을 얻을 수 있습니다.
 *   [기사 원문 보기](https://news.google.com/rss/articles/CBMiVkFVX3lxTFAyeWhjVy1kX3lndzFkYTVmbUl2cVhmYVN0N2xuSzVuRUJZMmNkOGlQUDJJXzI1bWJ6X0prazc1LXZOWklHcXNtNlRILW9CYVRJNFdOTEZ3?oc=5)
 
-<br>
+
 
 #### 3. 중국 ‘AI 굴기’가 찜찜한 이유…정보는 새고 진실은 사라졌나 - KBS 뉴스
 
@@ -35,7 +35,7 @@ category: "news"
 *   **인사이트:** 이 뉴스는 AI 기술의 발전이 특정 국가의 정치적 목적으로 오용될 때 발생할 수 있는 심각한 사회적, 윤리적 문제를 보여줍니다. AI는 강력한 도구이기에, 그 사용 목적과 방식에 대한 국제적인 합의와 규제가 필수적임을 강조합니다. 개인 정보 보호, 투명성, 공정성, 책임성 등 AI 윤리의 중요성이 더욱 부각되며, 각국 정부와 기업은 AI 개발 및 적용에 있어 이러한 가치들을 최우선적으로 고려해야 할 것입니다. 또한, AI 기술 패권 경쟁 속에서 윤리적 리더십의 중요성을 재확인하는 계기가 될 것입니다.
 *   [기사 원문 보기](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1IbFlpZGlyR1YzOWJnVkw4YzdZZS11cWZucjRFY3g5YW1EbDhEdFhlY05HaTFwWmloVlJQLTJGMkV6LWtaQlhKOXpXejl5V2lrQkRUaEtxYjQzNUE?oc=5)
 
-<br>
+
 
 #### 4. 국립환경과학원, AI 활용해 여름철 녹조 선제 대응 나선다 - 뉴시스
 
@@ -44,7 +44,7 @@ category: "news"
 *   **인사이트:** 이 소식은 AI가 복잡하고 예측하기 어려운 환경 문제 해결에 얼마나 효과적으로 기여할 수 있는지를 보여주는 긍정적인 사례입니다. AI 기반의 예측 시스템은 전통적인 모니터링 방식의 한계를 극복하고, 데이터 기반의 과학적인 의사결정을 가능하게 합니다. 이는 환경 보전 분야에서 AI의 활용 가능성을 확장하며, 다른 재난 예측 및 관리 분야에도 AI 도입을 가속화하는 중요한 전환점이 될 수 있습니다. 지속 가능한 사회를 위한 기술 활용의 모범 사례로서, 공공 부문의 AI 도입 활성화에 기여할 것으로 기대됩니다.
 *   [기사 원문 보기](https://news.google.com/rss/articles/CBMiYAFVX3lxTE96a1N0Q0FGNnBXSGl1MlBOM1NCX296WkFPTEh1V2JPSTNKNFJJQ1ZQVkNRM0xGaDcxa2xncWlYNmpXc2pKdkR0QmF0ck9tdGNnXzdwa1RCV2g1SUdDZXJKa9IBeAFVX3lxTFBsX1JRRXE0dlhGcTJGVmhVR2pxZUpFVTlrdS1BcVdoaU1nMFU5d1VfRVFHNF9zTXN6RXBsWS02SktiYXFKNG1BU0ozX0hyWjVMN1JFNzF5RGszZEw4czNkY21FZlFHYlJNb3lmbzRjR1VXeUlubndOQg?oc=5)
 
-<br>
+
 
 #### 5. 김광준 에이아이트릭스 대표 "의료 AI는 선택 아닌 필수"[문대현의 메디뷰] - v.daum.net
 
@@ -58,4 +58,4 @@ category: "news"
 
 향후 AI 발전에 있어 우리는 이러한 양면성을 동시에 인지하고 균형 잡힌 접근을 해야 할 것입니다. 기술 혁신을 통해 AI의 잠재력을 최대한 발휘하되, 그 과정에서 발생할 수 있는 윤리적, 사회적, 지정학적 문제에 대한 심도 깊은 논의와 국제적 협력이 필수적입니다. AI의 의식 가능성에 대한 탐구는 기술 개발에 대한 우리의 관점을 넓히고, '소버린 AI'를 향한 경쟁은 각국의 기술 자립 역량 강화에 박차를 가할 것입니다. 궁극적으로는 AI가 인류에게 긍정적인 미래를 제공하기 위해, 기술적 진보와 함께 사회적 책임, 윤리적 기준, 그리고 투명한 거버넌스를 확립해 나가는 노력이 지속적으로 요구됩니다.
 
-더 다양한 AI 도구와 디자인 툴은 nowtools.kr 메인에서 바로 확인하실 수 있습니다.
+더 다양한 AI 도구와 디자인 툴은 [nowtools.kr](https://nowtools.kr) 메인에서 바로 확인하실 수 있습니다.
