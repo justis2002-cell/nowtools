@@ -1,5 +1,6 @@
 ---
-title: "[오늘의 AI] 2026-05-03 급상승 AI 툴 TOP 3 소개"
+title: "학습 및 클라우드 AI - Scholé, Cloud Computer by Manus, Feather"
+description: "학습 및 클라우드 AI - Scholé, Cloud Computer by Manus, Feather 도구의 핵심 기능을 분석했습니다. 업무 기반 실시간 맞춤 학습, 코딩 없는 전용 클라우드 머신 구축, 로컬 처리 기반의 안전하고 빠른 이미지 편집 등 각 도구의 특장점을 상세히 소개합니다."
 date: "2026-05-03"
 category: "tools"
 ---

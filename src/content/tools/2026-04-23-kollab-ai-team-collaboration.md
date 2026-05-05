@@ -1,5 +1,6 @@
 ---
-title: "[오늘의 AI] 2026-04-23 급상승 AI 툴 TOP 3 소개"
+title: "협업과 생산성 혁신 AI - Kollab, Monid, Claude Code /ultrareview"
+description: "AI를 팀원으로 통합하는 플랫폼 Kollab, 에이전트의 유료 도구 활용을 돕는 전용 지갑 Monid, 그리고 병렬 처리로 코드 리뷰를 고도화하는 Claude Code /ultrareview를 소개합니다."
 date: "2026-04-23"
 category: "tools"
 ---

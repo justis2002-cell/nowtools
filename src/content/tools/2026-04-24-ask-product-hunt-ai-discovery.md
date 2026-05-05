@@ -1,5 +1,6 @@
 ---
-title: "[오늘의 AI] 2026-04-24 급상승 AI 툴 TOP 3 소개"
+title: "데이터 탐색 및 개발 자동화 AI - Ask Product Hunt AI, DeepSeek-V4, Codex 3.0"
+description: "방대한 제품 데이터를 분석하는 Ask Product Hunt AI, 100만 토큰 컨텍스트를 지원하는 오픈소스 모델 DeepSeek-V4, 그리고 크로스 앱 개발 에이전트 Codex 3.0을 분석합니다."
 date: "2026-04-24"
 category: "tools"
 ---

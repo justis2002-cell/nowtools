@@ -1,5 +1,6 @@
 ---
-title: "[오늘의 AI] 2026-05-04 급상승 AI 툴 TOP 3 소개"
+title: "AI 인프라 관리 도구 - Radar, Huddle01 VMs, PandaProbe"
+description: "AI 인프라 관리 도구 - Radar, Huddle01 VMs, PandaProbe 도구의 핵심 기능을 분석했습니다. 쿠버네티스 워크플로우 통합 관리, AI 에이전트 최적화 가상 머신, 에이전트 성능 평가 및 모니터링 등 각 도구의 특장점을 상세히 소개합니다."
 date: "2026-05-04"
 category: "tools"
 ---
