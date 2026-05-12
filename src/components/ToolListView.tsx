@@ -24,7 +24,7 @@ export default function ToolListView({ initialCategory = "all", hideHero = false
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 50;
+  const itemsPerPage = 48;
 
   // 현재 URL 경로에서 카테고리 정보를 직접 추출하여 가장 정확한 상태를 유지합니다.
   const activeCategory = useMemo(() => {
