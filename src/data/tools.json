@@ -183,6 +183,18 @@
             "wrtn",
             "한국AI"
           ]
+        },
+        {
+          "name": "Manus",
+          "description": "중국 Monica가 만든 자율형 범용 AI 에이전트. ChatGPT처럼 답변만 주는 게 아니라 사용자 목표를 받아 스스로 계획을 세우고 작업을 직접 수행한다. 자료 조사, 문서 작성, PPT 제작, 간단한 앱 개발까지 자율적으로 처리하는 'AI 직원' 개념의 차세대 AI.",
+          "pricing": "부분무료",
+          "url": "https://manus.im",
+          "keywords": [
+            "마누스",
+            "manus",
+            "AI에이전트",
+            "자율AI"
+          ]
         }
       ]
     },
@@ -452,6 +464,17 @@
           "url": "https://www.bing.com/images/create/ai-video-generator",
           "keywords": [
             "bing video creator"
+          ]
+        },
+        {
+          "name": "Higgsfield",
+          "description": "카메라 무브먼트와 시네마틱 연출에 특화된 AI 영상 생성 툴. 단순 텍스트→영상이 아니라 줌인, 패닝, 돌리 같은 실제 영화 카메라 기법을 프리셋으로 적용 가능. 광고, 뮤직비디오, SNS 영상 제작자에게 인기.",
+          "pricing": "부분무료",
+          "url": "https://higgsfield.ai",
+          "keywords": [
+            "힉스필드",
+            "higgsfield",
+            "AI영상"
           ]
         }
       ]
