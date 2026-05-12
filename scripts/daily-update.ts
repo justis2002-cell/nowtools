@@ -330,10 +330,12 @@ async function main() {
   console.log('🚀 종합 AI 정보 업데이트 시작...');
   let hasError = false;
   try {
-    await updateTools().catch(e => {
-      console.error('❌ 도구 업데이트 실패:', e);
-      hasError = true;
-    });
+    // 2026-05-12: 툴 자동 발행 중단. 도구 소개는 직접 작성함. 다시 켜려면 아래 5줄의 주석을 해제하세요.
+    // await updateTools().catch(e => {
+    //   console.error('❌ 도구 업데이트 실패:', e);
+    //   hasError = true;
+    // });
+    
     await updateNews().catch(e => {
       console.error('❌ 뉴스 업데이트 실패:', e);
       hasError = true;
