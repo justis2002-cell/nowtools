@@ -3,6 +3,8 @@ import remarkGfm from 'remark-gfm';
 import { getPostBySlug, getAllPosts } from '@/lib/blog';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
+import { mockTools } from '@/data/mockTools';
+import { ExternalLink } from 'lucide-react';
 import fs from 'fs';
 import path from 'path';
 
@@ -56,6 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
+  const toolInfo = post?.toolName ? mockTools.find(t => t.name === post.toolName) : null;
 
   if (!post) {
     return (
@@ -130,6 +133,47 @@ export default async function BlogPostPage({ params }: Props) {
               {post.content}
             </ReactMarkdown>
           </div>
+
+          {/* 관련 도구 카드 (toolName이 있을 때만 표시) */}
+          {toolInfo && (
+            <div className="mt-16 pt-8 border-t border-gray-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                <div className="w-1.5 h-5 bg-blue-600 rounded-full" />
+                이 도구 바로 써보기
+              </h3>
+              
+              <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col md:flex-row gap-6 md:items-start">
+                <div className="w-20 h-20 md:w-24 md:h-24 bg-gray-50 rounded-2xl flex items-center justify-center border border-gray-100 shrink-0 overflow-hidden">
+                  <img src={toolInfo.logo} alt={toolInfo.name} className="w-full h-full object-contain p-4" />
+                </div>
+                
+                <div className="flex-grow">
+                  <div className="flex flex-wrap items-center gap-3 mb-2">
+                    <h4 className="text-2xl font-bold text-gray-900">{toolInfo.name}</h4>
+                    <span className={`text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest ${
+                      toolInfo.badge === "free" ? "bg-emerald-100 text-emerald-700" :
+                      toolInfo.badge === "paid" ? "bg-rose-100 text-rose-700" :
+                      "bg-amber-100 text-amber-700"
+                    }`}>
+                      {toolInfo.badge === "free" ? "무료" : toolInfo.badge === "paid" ? "유료" : "부분무료"}
+                    </span>
+                  </div>
+                  <p className="text-gray-600 text-sm leading-relaxed mb-6">{toolInfo.description}</p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <a
+                      href={toolInfo.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-colors shadow-sm text-sm"
+                    >
+                      공식 사이트 바로가기 <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
           <footer className="mt-16 pt-8 border-t border-gray-100">
             <Link 

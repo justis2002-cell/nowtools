@@ -12,6 +12,7 @@ export interface BlogPost {
   content: string;
   excerpt: string;
   category: string;
+  toolName?: string;
 }
 
 /**
@@ -62,6 +63,7 @@ export function getAllPosts(): BlogPost[] {
           content,
           excerpt,
           category,
+          toolName: data.toolName,
         };
       });
 
@@ -96,6 +98,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
         content,
         excerpt: '',
         category,
+        toolName: data.toolName,
       };
     }
   }

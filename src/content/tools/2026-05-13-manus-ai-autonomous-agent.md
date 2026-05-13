@@ -3,6 +3,7 @@ title: "Manus AI 사용법 - 자율 AI 에이전트 기능, 요금제, ChatGPT·
 description: "Manus AI 사용법과 주요 기능, 요금제를 정리하고 ChatGPT, Claude와 비교했습니다. 자율형 AI 에이전트가 어떻게 작업을 직접 수행하는지, 어떤 업무에 적합한지 도입 전 확인할 점까지 살펴봅니다."
 date: "2026-05-13"
 category: "tools"
+toolName: "Manus"
 ---
 
 # Manus AI 사용법 - 자율 AI 에이전트 기능, 요금제, ChatGPT·Claude 비교
