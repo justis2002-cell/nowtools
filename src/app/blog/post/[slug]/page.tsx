@@ -1,4 +1,5 @@
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { getPostBySlug, getAllPosts } from '@/lib/blog';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
@@ -105,6 +106,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           <div className="prose prose-lg prose-slate max-w-none prose-headings:text-gray-900 prose-p:text-gray-800 prose-strong:text-gray-900 prose-a:text-blue-600">
             <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
               components={{
                 h1: () => null, // 이미 위에서 제목을 렌더링했으므로 본문의 h1은 숨김
                 img: ({ ...props }) => (
