@@ -150,6 +150,17 @@ export default function ToolDetailModal({ tool, onClose }: ToolDetailModalProps)
 
           {/* 공식 사이트 버튼 */}
           <div className="flex flex-col gap-4 mb-12">
+            {/* 📖 사용법 자세히 보기 버튼 (blogPostUrl이 있을 때만 표시) */}
+            {(tool as any).blogPostUrl && (
+              <a
+                href={(tool as any).blogPostUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-white font-extrabold py-5 rounded-2xl transition-all text-xl"
+              >
+                📖 사용법 자세히 보기 <ExternalLink className="w-6 h-6" />
+              </a>
+            )}
             <a
               href={tool.link}
               target="_blank"

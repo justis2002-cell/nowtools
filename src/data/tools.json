@@ -189,6 +189,7 @@
           "description": "중국 Monica가 만든 자율형 범용 AI 에이전트. ChatGPT처럼 답변만 주는 게 아니라 사용자 목표를 받아 스스로 계획을 세우고 작업을 직접 수행한다. 자료 조사, 문서 작성, PPT 제작, 간단한 앱 개발까지 자율적으로 처리하는 'AI 직원' 개념의 차세대 AI.",
           "pricing": "부분무료",
           "url": "https://manus.im",
+          "blogPostUrl": "https://nowtools.kr/blog/post/2026-05-13-manus-ai-autonomous-agent",
           "keywords": [
             "마누스",
             "manus",
