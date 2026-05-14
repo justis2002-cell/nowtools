@@ -44,6 +44,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2926379867432785" 
+          crossOrigin="anonymous" 
+        />
+      </head>
       <body className={`${inter.variable} ${outfit.variable} antialiased`}>
         <Script
           id="google-tag-manager"
