@@ -40,6 +40,19 @@
           ]
         },
         {
+          "name": "NotebookLM",
+          "description": "구글에서 만든 AI 도구. 내가 넣어준 자료(PDF, 영상, 웹사이트)를 기반으로 분석·요약·질문 응답을 해줌. 환각이 적고 자료 기반 답변이 정확해서 리서치·학습·콘텐츠 제작에 유용함.",
+          "pricing": "무료",
+          "url": "https://notebooklm.google.com/",
+          "blogPostUrl": "https://nowtools.kr/blog/post/2026-05-18-notebooklm-shorts-script",
+          "keywords": [
+            "노트북LM",
+            "NotebookLM",
+            "구글 AI",
+            "리서치"
+          ]
+        },
+        {
           "name": "Perplexity",
           "description": "AI 기반 실시간 검색 엔진. 단순 답변이 아니라 출처를 함께 제공해 신뢰도가 높다. 최신 뉴스, 논문, 웹 정보를 실시간으로 검색해 요약해주는 리서치 특화 AI.",
           "pricing": "부분무료",
