@@ -491,6 +491,21 @@
             "higgsfield",
             "AI영상"
           ]
+        },
+        {
+          "name": "Seedance 2.0",
+          "description": "바이트댄스(틱톡 모회사)에서 만든 AI 영상 생성 모델. CapCut의 Dreamina에서 사용 가능. 무료 일일 크레딧 제공. 단, 유료 플랜에서도 워터마크가 박힌다는 사용자 보고 다수.",
+          "pricing": "부분무료",
+          "url": "https://dreamina.capcut.com/",
+          "blogPostUrl": "https://nowtools.kr/blog/post/2026-05-20-ai-video-generators-comparison",
+          "keywords": [
+            "Seedance",
+            "시던스",
+            "바이트댄스",
+            "Dreamina",
+            "드리미나",
+            "AI 영상"
+          ]
         }
       ]
     },
