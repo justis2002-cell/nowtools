@@ -37,15 +37,15 @@
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px; /* 8px에서 10px로 넓혀서 잡기 편하게 합니다 */
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-transparent;
+  background: rgba(15, 23, 42, 0.8); /* 배경 트랙 영역을 살짝 보이게 어둡게 깝니다 */
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-700 rounded-full hover:bg-slate-600;
+  @apply bg-slate-500 rounded-full hover:bg-accent; /* 평소에는 잘 보이는 회색, 올리면 보라색 */
 }
 
 @keyframes fadeInUp {
