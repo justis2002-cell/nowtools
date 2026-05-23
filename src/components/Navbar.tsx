@@ -31,7 +31,7 @@ export default function Navbar({ onSearch }: NavbarProps) {
 
         <div className="flex items-center gap-6">
           <Link href="/" className="text-slate-400 hover:text-white transition-colors text-sm font-semibold">
-            About
+            홈
           </Link>
           <Link href="/blog/tools" className="text-slate-400 hover:text-white transition-colors text-sm font-semibold">
             급상승AI
@@ -40,7 +40,7 @@ export default function Navbar({ onSearch }: NavbarProps) {
             AI뉴스
           </Link>
           <Link href="/about" className="text-slate-400 hover:text-white transition-colors text-sm font-semibold">
-            소개
+            서비스 소개
           </Link>
         </div>
       </div>

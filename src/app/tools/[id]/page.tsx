@@ -1,0 +1,233 @@
+import { mockTools } from "@/data/mockTools";
+import Navbar from "@/components/Navbar";
+import Link from "next/link";
+import { ExternalLink, ArrowLeft, BookOpen } from "lucide-react";
+import type { Metadata } from "next";
+
+// 정적 빌드를 위한 모든 툴 ID 생성
+export function generateStaticParams() {
+  return mockTools.map((tool) => ({
+    id: encodeURIComponent(tool.id),
+  }));
+}
+
+interface Props {
+  params: Promise<{ id: string }>;
+}
+
+// SEO 메타데이터 생성
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const decodedId = decodeURIComponent(id);
+  const tool = mockTools.find((t) => t.id === decodedId);
+
+  if (!tool) {
+    return {
+      title: "툴을 찾을 수 없습니다 - nowtools.kr",
+    };
+  }
+
+  return {
+    title: `${tool.name} 사용법 및 상세 정보 - nowtools.kr`,
+    description: `${tool.name}에 대한 정보와 사용법을 확인하세요. ${tool.description}`,
+    alternates: {
+      canonical: `/tools/${id}`,
+    },
+    openGraph: {
+      title: `${tool.name} 사용법 및 상세 정보`,
+      description: tool.description,
+      url: `https://nowtools.kr/tools/${id}`,
+      type: "website",
+    },
+  };
+}
+
+const categoryTags: Record<string, string[]> = {
+  "ai-tool": ["글쓰기", "번역", "요약", "아이디어 발상"],
+  "ai-image": ["이미지 생성", "일러스트", "디자인 작업", "상업용 이미지"],
+  "ai-video": ["영상 생성", "텍스트→영상", "마케팅 영상", "SNS 콘텐츠"],
+  "ai-video-edit": ["자막 생성", "영상 편집", "쇼츠 제작", "더빙"],
+  "ai-music": ["음악 생성", "작곡", "배경음악", "효과음"],
+  "ai-coding": ["코드 자동완성", "웹앱 제작", "디버깅", "노코드 개발"],
+  "ai-auto": ["업무 자동화", "워크플로우", "반복 작업 제거", "앱 연동"],
+  "design": ["UI 디자인", "그래픽 디자인", "프로토타이핑", "협업"],
+  "font": ["한글 폰트", "상업용 무료", "웹폰트", "타이포그래피"],
+  "image-edit": ["배경 제거", "사진 편집", "이미지 압축", "벡터 변환"],
+  "free-source": ["스톡 이미지", "목업", "아이콘", "일러스트"],
+  "sns": ["예약 발행", "SNS 관리", "콘텐츠 스케줄링", "분석"],
+  "productivity": ["문서 관리", "프로젝트 관리", "협업", "할일 관리"],
+  "hosting": ["웹사이트 배포", "클라우드 호스팅", "백엔드", "정적 사이트"],
+  "conversion": ["PDF 변환", "파일 변환", "문서 편집", "형식 변환"],
+  "education": ["온라인 강의", "무료 수강", "자기계발", "자격증"],
+  "ai-writing": ["콘텐츠 생성", "문법 교정", "소설 창작", "마케팅 카피"],
+  "ai-presentation": ["슬라이드 자동 생성", "디자인 자동화", "발표 자료", "협업 도구"],
+  "ai-language": ["정교한 번역", "문법 교정", "외국어 학습", "다국어 지원"],
+  "ai-meeting": ["회의 기록", "음성 인식", "자동 요약", "업무 효율"],
+  "reference": ["디자인 영감", "포트폴리오", "UI 레퍼런스", "트렌드 파악"],
+};
+
+export default async function ToolDetailPage({ params }: Props) {
+  const { id } = await params;
+  const decodedId = decodeURIComponent(id);
+  const tool = mockTools.find((t) => t.id === decodedId);
+
+  if (!tool) {
+    return (
+      <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-4">도구를 찾을 수 없습니다.</h1>
+          <Link href="/" className="text-accent hover:underline">
+            홈으로 돌아가기
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  const relatedTools = mockTools
+    .filter((t) => t.category === tool.category && t.id !== tool.id)
+    .slice(0, 3);
+
+  const tags = categoryTags[tool.category] || [];
+
+  const translateBadge = (badge: string) => {
+    const map: Record<string, string> = { free: "무료", paid: "유료", freemium: "부분무료" };
+    return map[badge] || badge;
+  };
+
+  // 구글 봇이 문서 구조를 신뢰할 수 있게 JSON-LD (스키마 정보) 추가
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": tool.name,
+    "description": tool.description,
+    "image": tool.logo,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW",
+      "valueAddedTaxIncluded": "true"
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-slate-950 text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <Navbar />
+      
+      <main className="py-20 px-4">
+        <div className="max-w-3xl mx-auto">
+          {/* 뒤로가기 버튼 */}
+          <Link 
+            href="/" 
+            className="inline-flex items-center gap-2 text-slate-400 hover:text-white mb-8 transition-colors text-sm font-semibold"
+          >
+            <ArrowLeft className="w-4 h-4" /> 목록으로 돌아가기
+          </Link>
+
+          {/* 메인 상세 정보 카드 */}
+          <div className="glass p-8 md:p-12 rounded-3xl hover-glow border border-slate-800">
+            <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-10">
+              <div className="w-32 h-32 bg-white rounded-3xl flex items-center justify-center border border-slate-200 shadow-2xl shrink-0 overflow-hidden">
+                <img
+                  src={tool.logo}
+                  alt={tool.name}
+                  className="w-full h-full object-contain p-6"
+                />
+              </div>
+              <div className="flex-grow text-center md:text-left">
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-4">
+                  <h1 className="text-4xl font-extrabold text-white">{tool.name}</h1>
+                  <span className={`text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest ${
+                    tool.badge === 'free' ? 'badge-free' : 
+                    tool.badge === 'paid' ? 'badge-paid' : 'badge-freemium'
+                  }`}>
+                    {translateBadge(tool.badge)}
+                  </span>
+                </div>
+                <p className="text-slate-300 text-xl leading-relaxed font-medium">
+                  {tool.description}
+                </p>
+              </div>
+            </div>
+
+            {/* 추천 태그 */}
+            {tags.length > 0 && (
+              <div className="mb-10">
+                <h3 className="text-sm font-bold text-slate-500 mb-3 uppercase tracking-wider">
+                  이런 분께 추천해요
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-3.5 py-1.5 bg-slate-900 border border-slate-800 rounded-full text-xs text-slate-300 font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 관련 툴 추천 */}
+            {relatedTools.length > 0 && (
+              <div className="mb-10 pt-8 border-t border-slate-800/50">
+                <h3 className="text-lg font-bold text-slate-400 mb-6 flex items-center gap-2 uppercase tracking-wider">
+                  <div className="w-1.5 h-5 bg-accent rounded-full" />
+                  함께 보면 좋은 비슷한 툴
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {relatedTools.map((related) => (
+                    <Link
+                      key={related.id}
+                      href={`/tools/${encodeURIComponent(related.id)}`}
+                      className="glass p-4 rounded-2xl border border-slate-800/80 hover:border-accent/50 transition-all group flex flex-col"
+                    >
+                      <div className="w-10 h-10 bg-white rounded-xl mb-3 flex items-center justify-center overflow-hidden shrink-0 border border-slate-100">
+                        <img
+                          src={related.logo}
+                          alt={related.name}
+                          className="w-full h-full object-contain p-2"
+                        />
+                      </div>
+                      <h4 className="font-bold text-sm mb-1 text-white group-hover:text-accent transition-colors truncate">
+                        {related.name}
+                      </h4>
+                      <p className="text-xs text-slate-500 line-clamp-1">
+                        {related.description}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* 외부 공식 사이트 버튼 및 상세 리뷰 연동 */}
+            <div className="flex flex-col gap-4 pt-4">
+              {tool.blogPostUrl && (
+                <a
+                  href={tool.blogPostUrl}
+                  className="flex items-center justify-center gap-2 w-full bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-white font-extrabold py-5 rounded-2xl transition-all text-xl"
+                >
+                  <BookOpen className="w-6 h-6" /> 상세 리뷰 및 사용 가이드 읽기
+                </a>
+              )}
+              <a
+                href={tool.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-white font-extrabold py-5 rounded-2xl transition-all shadow-lg shadow-accent/20 text-xl"
+              >
+                공식 사이트 바로가기 <ExternalLink className="w-6 h-6" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}

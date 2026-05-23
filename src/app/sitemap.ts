@@ -2,6 +2,7 @@ export const dynamic = "force-static";
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog';
 import { getDynamicCategories } from '@/lib/category-data';
+import { mockTools } from '@/data/mockTools';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://nowtools.kr';
@@ -52,5 +53,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  return [...routes, ...categoryUrls, ...postUrls];
+  // 개별 툴 상세 페이지들
+  const toolUrls = mockTools.map((tool) => ({
+    url: `${baseUrl}/tools/${encodeURIComponent(tool.id)}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.6,
+  }));
+
+  return [...routes, ...categoryUrls, ...postUrls, ...toolUrls];
 }

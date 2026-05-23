@@ -1,6 +1,6 @@
 import { Tool } from "@/types/tool";
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
+import Link from "next/link";
 
 interface ToolCardProps {
   tool: Tool;
@@ -13,10 +13,16 @@ export default function ToolCard({ tool, onClick }: ToolCardProps) {
     return map[badge] || badge;
   };
 
+  const toolUrl = `/tools/${encodeURIComponent(tool.id)}`;
+
   return (
-    <div 
-      onClick={() => onClick(tool)}
-      className="glass p-6 rounded-3xl hover-glow group cursor-pointer flex flex-col h-full"
+    <Link 
+      href={toolUrl}
+      onClick={(e) => {
+        e.preventDefault(); // 사용자는 기존과 동일하게 부드러운 팝업(모달)으로 상세 정보를 감상합니다.
+        onClick(tool);
+      }}
+      className="glass p-6 rounded-3xl hover-glow group flex flex-col h-full"
     >
       <div className="w-14 h-14 bg-white rounded-2xl mb-4 flex items-center justify-center overflow-hidden border border-slate-200">
         <img 
@@ -46,6 +52,6 @@ export default function ToolCard({ tool, onClick }: ToolCardProps) {
           상세보기 <ArrowRight className="w-4 h-4 ml-1" />
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

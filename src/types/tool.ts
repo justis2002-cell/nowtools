@@ -33,4 +33,5 @@ export interface Tool {
   link: string;
   logo: string;
   keywords?: string[];
+  blogPostUrl?: string;
 }

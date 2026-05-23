@@ -182,6 +182,27 @@ export default function ToolListView({ initialCategory = "all", hideHero = false
             ))}
           </div>
         )}
+
+        {/* 📝 구글 애드센스 및 SEO 검색 노출을 위한 정적 텍스트 섹션 */}
+        <div className="container mx-auto px-4 mt-24 mb-12">
+          <div className="glass p-8 md:p-12 rounded-3xl border border-white/5 max-w-4xl mx-auto">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-6 flex items-center">
+              <span className="w-1.5 h-6 bg-accent rounded-full mr-3"></span>
+              나우툴즈(nowtools.kr) 소개 및 AI 툴 활용 가이드
+            </h2>
+            <div className="space-y-6 text-slate-400 text-sm md:text-base leading-relaxed font-medium">
+              <p>
+                <strong>나우툴즈(nowtools.kr)</strong>는 인공지능(AI), 웹 디자인, 이미지 편집, 폰트 다운로드 등 실무와 일상에 날개를 달아줄 전 세계의 다양한 디지털 유틸리티 도구들을 한데 모아 분류한 <strong>AI/디자인 툴 전문 디렉토리 사이트</strong>입니다. 빠르게 확장되는 AI 생태계 속에서, 사용자가 자신에게 꼭 필요한 도구를 시간 낭비 없이 찾고 비교할 수 있도록 체계적으로 정리해 제공합니다.
+              </p>
+              <p>
+                저희 디렉토리는 <em>ChatGPT, Claude, Gemini</em>와 같은 범용적인 AI 챗봇 서비스부터 시작하여, <em>Midjourney, DALL-E, Stable Diffusion</em> 등 고성능 이미지 생성 인공지능, 그리고 개발 생산성을 극대화해 주는 코딩 비서와 자동화 툴까지 광범위하게 수집하고 있습니다. 또한 요금 지불 부담이 적은 <strong>무료(Free)</strong> 및 <strong>부분무료(Freemium)</strong> 필터를 제공하여 경제적인 툴 탐색을 돕고 있습니다.
+              </p>
+              <p>
+                매일 쏟아져 나오는 AI 트렌드와 뉴스를 발 빠르게 전달하며, 각 도구의 상세한 사용법과 상업적 이용 가능 여부, 라이선스 요건 등을 면밀히 검토하여 안내하고 있습니다. 나우툴즈와 함께 스마트한 업무 자동화를 구축하고 차세대 IT 생산성을 직접 경험해 보세요.
+              </p>
+            </div>
+          </div>
+        </div>
       </main>
 
       <ToolDetailModal 
