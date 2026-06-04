@@ -126,7 +126,7 @@ export default function ToolDetailModal({ tool, onClose }: ToolDetailModalProps)
                     key={related.id}
                     href={related.link}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="glass p-4 rounded-2xl hover:border-accent/50 transition-all group flex flex-col"
                   >
                     <div className="w-10 h-10 bg-white rounded-xl mb-3 flex items-center justify-center overflow-hidden shrink-0">
@@ -155,7 +155,7 @@ export default function ToolDetailModal({ tool, onClose }: ToolDetailModalProps)
               <a
                 href={(tool as any).blogPostUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="flex items-center justify-center gap-2 w-full bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-white font-extrabold py-5 rounded-2xl transition-all text-xl"
               >
                 📖 사용법 자세히 보기 <ExternalLink className="w-6 h-6" />
@@ -164,7 +164,7 @@ export default function ToolDetailModal({ tool, onClose }: ToolDetailModalProps)
             <a
               href={tool.link}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent-dark text-white font-extrabold py-5 rounded-2xl transition-all shadow-lg shadow-accent/20 text-xl"
             >
               공식 사이트 바로가기 <ExternalLink className="w-6 h-6" />

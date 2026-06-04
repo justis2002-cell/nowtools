@@ -121,7 +121,7 @@ export default async function BlogPostPage({ params }: Props) {
                     <a 
                       href={href} 
                       target={isExternal ? '_blank' : undefined} 
-                      rel={isExternal ? 'noopener noreferrer' : undefined}
+                      rel={isExternal ? 'noopener noreferrer nofollow' : undefined}
                       {...props}
                     >
                       {children}
@@ -164,7 +164,7 @@ export default async function BlogPostPage({ params }: Props) {
                     <a
                       href={toolInfo.link}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-colors shadow-sm text-sm"
                     >
                       공식 사이트 바로가기 <ExternalLink className="w-4 h-4" />

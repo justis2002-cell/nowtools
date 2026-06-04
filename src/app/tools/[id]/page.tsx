@@ -219,7 +219,7 @@ export default async function ToolDetailPage({ params }: Props) {
               <a
                 href={tool.link}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-white font-extrabold py-5 rounded-2xl transition-all shadow-lg shadow-accent/20 text-xl"
               >
                 공식 사이트 바로가기 <ExternalLink className="w-6 h-6" />
